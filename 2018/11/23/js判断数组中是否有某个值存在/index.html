@@ -143,15 +143,17 @@ alert(array.indexOf(5)); // -1  </code></pre><p>indexOf的代码：  </p>
             </a>
         
         
-            <a class="next" href="/2018/11/22/hexo%E8%AE%BE%E7%BD%AE%E7%BD%91%E7%AB%99%E5%9B%BE%E6%A0%87Favicon/">
-                <span class="nav-default">hexo设置网站图标Favicon</span>
+            <a class="next" href="/2018/11/22/hexo%E9%87%8C%E7%9A%84code%E4%BB%A3%E7%A0%81%E9%AB%98%E4%BA%AE/">
+                <span class="nav-default">hexo里的code代码高亮</span>
                 <span class="nav-mobile">Next</span>
                 <i class="iconfont icon-next"></i>
             </a>
         
     
 </div>
-<div id="comment-container"></div>
+<div id="comment-container">
+<div id="vcomments"></div>
+</div>
     </div>
 </div>
 <footer class="footer-social">
@@ -181,7 +183,8 @@ alert(array.indexOf(5)); // -1  </code></pre><p>indexOf的代码：  </p>
 
 <script src="/js/index.js"></script>
 
-<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<!-- <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script> -->
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
 <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
 <script>
     
@@ -204,5 +207,16 @@ $('pre').addClass('prettyprint linenums').attr('style', 'overflow:auto;');
 	       }
 	   }
 	   document.addEventListener(visibilityChangeEvent, onVisibilityChange);
+	   
+	   
+	    new Valine({
+	               el: '#vcomments' ,
+	                   appId: 'ECqpaC0iXQ26KQJHF9olNbFh-gzGzoHsz',
+	                   appKey: 'opIxDQ23FmemTLQXoqY4EQT9',
+	                   notify:false, 
+	                   verify:false, 
+	                   avatar:'mp', 
+	                   placeholder: 'just go go' 
+	           })
 </script>
 </html>

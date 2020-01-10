@@ -316,7 +316,8 @@ filter:alpha(opacity=50);
 
 <script src="/js/index.js"></script>
 
-<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<!-- <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script> -->
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
 <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
 <script>
     
@@ -339,5 +340,16 @@ $('pre').addClass('prettyprint linenums').attr('style', 'overflow:auto;');
 	       }
 	   }
 	   document.addEventListener(visibilityChangeEvent, onVisibilityChange);
+	   
+	   
+	    new Valine({
+	               el: '#vcomments' ,
+	                   appId: 'ECqpaC0iXQ26KQJHF9olNbFh-gzGzoHsz',
+	                   appKey: 'opIxDQ23FmemTLQXoqY4EQT9',
+	                   notify:false, 
+	                   verify:false, 
+	                   avatar:'mp', 
+	                   placeholder: 'just go go' 
+	           })
 </script>
 </html>

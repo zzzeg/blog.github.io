@@ -134,15 +134,17 @@ Setup e2e tests with Nightwatch? (Y/n) n (单元测试不需要)  </code></pre><
             </a>
         
         
-            <a class="next" href="/2016/12/05/textarea%E8%87%AA%E5%8A%A8%E4%BC%B8%E7%BC%A9%E6%A1%86/">
-                <span class="nav-default">textarea自动伸缩框</span>
+            <a class="next" href="/2016/12/05/%E6%95%B0%E7%BB%84%E7%9A%84%E5%92%8C%E5%B9%B6%E5%92%8C%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%92%8C%E5%B9%B6/">
+                <span class="nav-default">数组的和并和对象的和并</span>
                 <span class="nav-mobile">Next</span>
                 <i class="iconfont icon-next"></i>
             </a>
         
     
 </div>
-<div id="comment-container"></div>
+<div id="comment-container">
+<div id="vcomments"></div>
+</div>
     </div>
 </div>
 <footer class="footer-social">
@@ -172,7 +174,8 @@ Setup e2e tests with Nightwatch? (Y/n) n (单元测试不需要)  </code></pre><
 
 <script src="/js/index.js"></script>
 
-<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<!-- <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script> -->
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
 <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
 <script>
     
@@ -195,5 +198,16 @@ $('pre').addClass('prettyprint linenums').attr('style', 'overflow:auto;');
 	       }
 	   }
 	   document.addEventListener(visibilityChangeEvent, onVisibilityChange);
+	   
+	   
+	    new Valine({
+	               el: '#vcomments' ,
+	                   appId: 'ECqpaC0iXQ26KQJHF9olNbFh-gzGzoHsz',
+	                   appKey: 'opIxDQ23FmemTLQXoqY4EQT9',
+	                   notify:false, 
+	                   verify:false, 
+	                   avatar:'mp', 
+	                   placeholder: 'just go go' 
+	           })
 </script>
 </html>
