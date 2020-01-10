@@ -256,7 +256,8 @@ article.post-abstract:after {
     color: #0e83cd; }
 
 .post-whole .post-content {
-  border-bottom: 1px solid #e3e3e3; }
+  border-bottom: 1px solid #e3e3e3;
+  padding: 0 0 40px 0; }
 
 .post-whole .post-tag {
   padding: 15px 0; }
@@ -576,8 +577,9 @@ table {
 
 .paginator {
   font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 20px;
-  margin: 1em 0; }
+  font-size: 16px;
+  color: #1094e8;
+  margin: 2em 0; }
   .paginator::after {
     content: "";
     clear: both;
