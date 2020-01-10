@@ -3,7 +3,7 @@
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
-    <title>zeg</title>
+    <title>Vue里push方法的视图不更新</title>
     
 <link rel="stylesheet" href="/css/style.css">
 
@@ -37,6 +37,10 @@
             </a>
             
 
+            
+            <a href="/about/" class="header-nav-link">
+                About
+            </a>
             
         </nav>
     </div>
@@ -176,5 +180,21 @@ vm.b = 2
 
 $('pre').addClass('prettyprint linenums').attr('style', 'overflow:auto;');
        prettyPrint();
+	   
+	   
+	   var hiddenProperty = 'hidden' in document ? 'hidden' :    
+	       'webkitHidden' in document ? 'webkitHidden' :    
+	       'mozHidden' in document ? 'mozHidden' :    
+	       null;
+	   var realTitle = 'Vue里push方法的视图不更新';
+	   var visibilityChangeEvent = hiddenProperty.replace(/hidden/i, 'visibilitychange');
+	   var onVisibilityChange = function(){
+	       if (!document[hiddenProperty]) {
+	           document.title = realTitle;
+	       }else{
+	           document.title = '藏起来啦 (*´∇｀*)';
+	       }
+	   }
+	   document.addEventListener(visibilityChangeEvent, onVisibilityChange);
 </script>
 </html>

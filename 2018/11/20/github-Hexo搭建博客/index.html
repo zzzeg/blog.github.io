@@ -3,7 +3,7 @@
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
-    <title>zeg</title>
+    <title>github+Hexo搭建博客</title>
     
 <link rel="stylesheet" href="/css/style.css">
 
@@ -37,6 +37,10 @@
             </a>
             
 
+            
+            <a href="/about/" class="header-nav-link">
+                About
+            </a>
             
         </nav>
     </div>
@@ -141,7 +145,8 @@ tags: 标签
 categories: 分类  
 \-\-\-  
 内容  </code></pre><p>标签和分类，当在页面有填入对应的值时，会自动创建分类，如果要手动创建分类页面  </p>
-<pre><code>hexo new page &quot;categories&quot;  </code></pre><h5 id="发布网站"><a href="#发布网站" class="headerlink" title="发布网站"></a><a href="#发布网站" title="发布网站"></a>发布网站</h5><p>文章写完，发布到github上  </p>
+<pre><code>hexo new page &quot;categories&quot;  </code></pre><h5 id="发布网站"><a href="#发布网站" class="headerlink" title="发布网站"></a><a href="#发布网站" title="发布网站"></a>发布网站</h5><p>发布之前要装个git的插件,不然<code>hexo d</code>会报错</p>
+<pre><code>npm install hexo-deployer-git --save</code></pre><p>文章写完，发布到github上  </p>
 <pre><code>hexo clean     // 清除缓存  
 hexo g       // 生成  
 hexo s         // 启动本地服务查看，默认 localhost:4000//  
@@ -225,5 +230,21 @@ hexo clean &amp;&amp; hexo g &amp;&amp; hexo s  </code></pre><h3 id="装完吐�
 
 $('pre').addClass('prettyprint linenums').attr('style', 'overflow:auto;');
        prettyPrint();
+	   
+	   
+	   var hiddenProperty = 'hidden' in document ? 'hidden' :    
+	       'webkitHidden' in document ? 'webkitHidden' :    
+	       'mozHidden' in document ? 'mozHidden' :    
+	       null;
+	   var realTitle = 'github+Hexo搭建博客';
+	   var visibilityChangeEvent = hiddenProperty.replace(/hidden/i, 'visibilitychange');
+	   var onVisibilityChange = function(){
+	       if (!document[hiddenProperty]) {
+	           document.title = realTitle;
+	       }else{
+	           document.title = '藏起来啦 (*´∇｀*)';
+	       }
+	   }
+	   document.addEventListener(visibilityChangeEvent, onVisibilityChange);
 </script>
 </html>

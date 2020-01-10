@@ -3,7 +3,7 @@
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
-    <title>zeg</title>
+    <title>写在vue中简单的随机验证码</title>
     
 <link rel="stylesheet" href="/css/style.css">
 
@@ -37,6 +37,10 @@
             </a>
             
 
+            
+            <a href="/about/" class="header-nav-link">
+                About
+            </a>
             
         </nav>
     </div>
@@ -187,9 +191,9 @@
 <div class="paginator">
     
         
-            <a class="prev" href="/2018/11/22/hexo%E8%AE%BE%E7%BD%AE%E7%BD%91%E7%AB%99%E5%9B%BE%E6%A0%87Favicon/">
+            <a class="prev" href="/2018/11/22/hexo%E9%87%8C%E7%9A%84code%E4%BB%A3%E7%A0%81%E9%AB%98%E4%BA%AE/">
                 <i class="iconfont icon-prev"></i>
-                <span class="nav-default">hexo设置网站图标Favicon</span>
+                <span class="nav-default">hexo里的code代码高亮</span>
                 <span class="nav-mobile">Prev</span>
             </a>
         
@@ -239,5 +243,21 @@
 
 $('pre').addClass('prettyprint linenums').attr('style', 'overflow:auto;');
        prettyPrint();
+	   
+	   
+	   var hiddenProperty = 'hidden' in document ? 'hidden' :    
+	       'webkitHidden' in document ? 'webkitHidden' :    
+	       'mozHidden' in document ? 'mozHidden' :    
+	       null;
+	   var realTitle = '写在vue中简单的随机验证码';
+	   var visibilityChangeEvent = hiddenProperty.replace(/hidden/i, 'visibilitychange');
+	   var onVisibilityChange = function(){
+	       if (!document[hiddenProperty]) {
+	           document.title = realTitle;
+	       }else{
+	           document.title = '藏起来啦 (*´∇｀*)';
+	       }
+	   }
+	   document.addEventListener(visibilityChangeEvent, onVisibilityChange);
 </script>
 </html>

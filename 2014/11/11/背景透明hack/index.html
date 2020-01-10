@@ -3,7 +3,7 @@
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
-    <title>zeg</title>
+    <title>背景透明hack</title>
     
 <link rel="stylesheet" href="/css/style.css">
 
@@ -37,6 +37,10 @@
             </a>
             
 
+            
+            <a href="/about/" class="header-nav-link">
+                About
+            </a>
             
         </nav>
     </div>
@@ -88,6 +92,12 @@
             <h2 class="title">背景透明hack</h2>
             <div class="post-meta">
                 <span class="post-time">2014-11-11</span>
+                
+                <span class="post-category">
+                    
+                    <a class="category" href="/categories/Hexo/">Hexo</a>
+                    
+                </span>
                 
                 <span class="post-visit"> visited：<span id="busuanzi_value_page_pv"></span></span>
             </div>
@@ -173,5 +183,21 @@ filter:alpha(opacity=50);
 
 $('pre').addClass('prettyprint linenums').attr('style', 'overflow:auto;');
        prettyPrint();
+	   
+	   
+	   var hiddenProperty = 'hidden' in document ? 'hidden' :    
+	       'webkitHidden' in document ? 'webkitHidden' :    
+	       'mozHidden' in document ? 'mozHidden' :    
+	       null;
+	   var realTitle = '背景透明hack';
+	   var visibilityChangeEvent = hiddenProperty.replace(/hidden/i, 'visibilitychange');
+	   var onVisibilityChange = function(){
+	       if (!document[hiddenProperty]) {
+	           document.title = realTitle;
+	       }else{
+	           document.title = '藏起来啦 (*´∇｀*)';
+	       }
+	   }
+	   document.addEventListener(visibilityChangeEvent, onVisibilityChange);
 </script>
 </html>

@@ -3,7 +3,7 @@
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
-    <title>zeg</title>
+    <title>javascript阻止浏览器后退backspace键</title>
     
 <link rel="stylesheet" href="/css/style.css">
 
@@ -37,6 +37,10 @@
             </a>
             
 
+            
+            <a href="/about/" class="header-nav-link">
+                About
+            </a>
             
         </nav>
     </div>
@@ -153,9 +157,9 @@ window.history.forward(1);//屏蔽浏览器自带的后退键 </code></pre>
 <div class="paginator">
     
         
-            <a class="prev" href="/2016/07/14/something-about-JQueryUi/">
+            <a class="prev" href="/2016/07/14/%E5%B0%8F%E4%B8%91/">
                 <i class="iconfont icon-prev"></i>
-                <span class="nav-default">Something About JQueryUi</span>
+                <span class="nav-default">小丑</span>
                 <span class="nav-mobile">Prev</span>
             </a>
         
@@ -205,5 +209,21 @@ window.history.forward(1);//屏蔽浏览器自带的后退键 </code></pre>
 
 $('pre').addClass('prettyprint linenums').attr('style', 'overflow:auto;');
        prettyPrint();
+	   
+	   
+	   var hiddenProperty = 'hidden' in document ? 'hidden' :    
+	       'webkitHidden' in document ? 'webkitHidden' :    
+	       'mozHidden' in document ? 'mozHidden' :    
+	       null;
+	   var realTitle = 'javascript阻止浏览器后退backspace键';
+	   var visibilityChangeEvent = hiddenProperty.replace(/hidden/i, 'visibilitychange');
+	   var onVisibilityChange = function(){
+	       if (!document[hiddenProperty]) {
+	           document.title = realTitle;
+	       }else{
+	           document.title = '藏起来啦 (*´∇｀*)';
+	       }
+	   }
+	   document.addEventListener(visibilityChangeEvent, onVisibilityChange);
 </script>
 </html>
