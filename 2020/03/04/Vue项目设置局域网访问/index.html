@@ -3,7 +3,7 @@
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
-    <title>海心</title>
+    <title>Vue项目设置局域网访问</title>
     
 <link rel="stylesheet" href="./css/style.css">
 
@@ -85,9 +85,9 @@
         <div class="posts">
     <article class="post-whole">
         <div class="post-title">
-            <h2 class="title">海心</h2>
+            <h2 class="title">Vue项目设置局域网访问</h2>
             <div class="post-meta">
-                <span class="post-time">2014-05-18</span>
+                <span class="post-time">2020-03-04</span>
                 
                 <span class="post-visit"> visited：<span id="busuanzi_value_page_pv"></span></span>
             </div>
@@ -100,11 +100,27 @@
     </div>
 </div>
         <div class="post-content">
-            <p>　　昨日去了海边…</p>
-<p>　　szw很长很长，租一辆单车，缓缓骑行。飒飒的海风拂面，带着些许潮湿和腥味，这种腥咸的味道，清凉、酸涩、无人问津…耳边不时听闻男男女女的谈笑、小孩的稚语、好机油们打牌的大叫、山地车携带的咚恰乐…恰有一番清明上河图的繁华与喧嚣…<br>    <a id="more"></a><br>　　岸边树林下，条条石凳上都有一对相拥而坐的情侣在窃窃私语，好不浪漫。阴凉、安静、惬意，倘若是我，也定须选在这里约会…<br>靠近沙滩边的地方，每隔不远处都会有一小块聚会地，一张张颜色各异的毯子上摆着各式各样的零食，男女老少围成一圈，打牌、聊天、分享照片，笑声连绵…</p>
-<p>　　海边的浪花，沙粒，贝壳，海鸥，海藻…水如清泉，海天一色。看着一望无际的远方，大海和天空牵着手，交融在一起。看不清彼岸，可是能猜到，海那边，是大家立下的誓言，无边无际，永恒无期…</p>
-<p>　　沙滩上前一刻踩出的脚印，后一刻浪花涌上，瞬间被海水抚平。有些东西，虽随浪花离去，却已然铭记于心，任雪风吹雨打，依然不卑不亢，与岁月，与生命，不离不弃…</p>
-
+            <hr>
+<p>title: Vue项目设置局域网访问<br>date: 2019-07-01<br>tags:</p>
+<p>有两种方式：</p>
+<ol>
+<li>修改<code>package.json</code>文件的dev,后面加上<code>--host 0.0.0.0</code>，或者自己的局域网ip地址，例：<code>--host 192.168.0.33</code></li>
+</ol>
+<pre><code>&quot;scripts&quot;: {
+    &quot;dev&quot;: &quot;webpack-dev-server --inline --progress --config build/webpack.dev.conf.js --host 0.0.0.0&quot;,
+    &quot;build&quot;: &quot;node build/build.js&quot;,
+    &quot;start&quot;: &quot;npm run build:client &amp;&amp; npm run build:server &amp;&amp; cross-env NODE_ENV=production node server&quot;,
+    &quot;build:client&quot;: &quot;cross-env NODE_ENV=production webpack --config build/webpack.client.conf.js --progress --hide-modules&quot;,
+    &quot;temp&quot;: &quot;node tools/app.js&quot;,
+    &quot;build:server&quot;: &quot;cross-env NODE_ENV=production webpack --config build/webpack.server.conf.js --progress --hide-modules&quot;,
+    &quot;lint&quot;: &quot;eslint --ext .js,.vue src&quot;,
+    &quot;karma&quot;: &quot;cross-env BABEL_ENV=test karma start test/unit/karma.conf.js --single-run&quot;
+  },</code></pre><p>2.Vue配置文件config下面的index.js把locahost改成0.0.0.0</p>
+<pre><code>dev: {
+    port: 8000,
+    autoOpenBrowser: true,
+    host: &#39;0.0.0.0&#39;,
+}</code></pre>
         </div>
         
     </article>
@@ -112,15 +128,9 @@
 <div class="paginator">
     
         
-            <a class="prev" href="./2014/09/08/%E4%B8%AD%E7%A7%8B%E6%9C%88%E5%9C%86%E5%A4%9C/">
-                <i class="iconfont icon-prev"></i>
-                <span class="nav-default">中秋月圆夜</span>
-                <span class="nav-mobile">Prev</span>
-            </a>
         
-        
-            <a class="next" href="./2014/05/14/%E6%97%85%E9%80%94%E9%9A%8F%E6%84%9F/">
-                <span class="nav-default">旅途随感</span>
+            <a class="next" href="./2019/04/03/Vue%E9%87%8Cpush%E6%96%B9%E6%B3%95%E7%9A%84%E8%A7%86%E5%9B%BE%E4%B8%8D%E6%9B%B4%E6%96%B0/">
+                <span class="nav-default">Vue里push方法的视图不更新</span>
                 <span class="nav-mobile">Next</span>
                 <i class="iconfont icon-next"></i>
             </a>
@@ -173,7 +183,7 @@ $('pre').addClass('prettyprint linenums').attr('style', 'overflow:auto;');
 	       'webkitHidden' in document ? 'webkitHidden' :    
 	       'mozHidden' in document ? 'mozHidden' :    
 	       null;
-	   var realTitle = '海心';
+	   var realTitle = 'Vue项目设置局域网访问';
 	   var visibilityChangeEvent = hiddenProperty.replace(/hidden/i, 'visibilitychange');
 	   var onVisibilityChange = function(){
 	       if (!document[hiddenProperty]) {
