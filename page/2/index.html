@@ -86,6 +86,33 @@
     
         <article class="post-abstract">
             <div class="post-title">
+                <h2><a class="post-title-link" href="/2018/11/22/hexo%E9%87%8C%E7%9A%84code%E4%BB%A3%E7%A0%81%E9%AB%98%E4%BA%AE/">hexo里的code代码高亮</a></h2>
+            </div>
+            <div class="post-meta">
+                <span class="post-time">2018-11-22</span>
+                
+            </div>
+            <div class="post-content">
+                
+                    <p>Hexo博客弄好之后，代码高亮显得太单调了，以前折腾wordpress的时候用param.js不太适合这个，多方查看找到个<a href="https://github.com/google/code-prettify" target="_blank" rel="noopener">prettify</a> 插件，尝试了一下之后效果还不错。</p>
+<p>先关闭Hexo的代码高亮功能，修改根目录下的配置文件<code>_config.yml</code>  </p>
+<pre><code>highlight:  
+ enable: false  
+ line_number: false   
+ auto_detect: false  
+ tab_replace:  </code></pre>
+                    <div class="read-more">
+                        <a href="/2018/11/22/hexo%E9%87%8C%E7%9A%84code%E4%BB%A3%E7%A0%81%E9%AB%98%E4%BA%AE/" class="read-more-link">
+                            ReadMore
+                            <i class="iconfont icon-readmore"></i>
+                        </a>
+                    </div>
+                
+            </div>
+        </article>
+    
+        <article class="post-abstract">
+            <div class="post-title">
                 <h2><a class="post-title-link" href="/2018/11/21/%E5%86%99%E5%9C%A8vue%E4%B8%AD%E7%AE%80%E5%8D%95%E7%9A%84%E9%9A%8F%E6%9C%BA%E9%AA%8C%E8%AF%81%E7%A0%81/">写在vue中简单的随机验证码</a></h2>
             </div>
             <div class="post-meta">
@@ -238,26 +265,6 @@ var arrayObj = new Array(\[element0\[, element1\[, ...\[, elementN\]\]\]\]);　�
                             <i class="iconfont icon-readmore"></i>
                         </a>
                     </div>
-                
-            </div>
-        </article>
-    
-        <article class="post-abstract">
-            <div class="post-title">
-                <h2><a class="post-title-link" href="/2016/12/05/textarea%E8%87%AA%E5%8A%A8%E4%BC%B8%E7%BC%A9%E6%A1%86/">textarea自动伸缩框</a></h2>
-            </div>
-            <div class="post-meta">
-                <span class="post-time">2016-12-05</span>
-                
-            </div>
-            <div class="post-content">
-                
-                    <p>在做表单配置时，项目遇到需要写一个回复月工作内容的页面，设计师给的初始界面就是一个只有一行的框。后台要求，必须用textarea，然后当时就想这个交互该怎么实现比较好，然后想起了新浪微博的做法：点击评论，默认显示一行，当输入的文字超过一行或者输入Enter时，输入框的高度会随着改变，直到输入完毕。顿时觉得这个细节做得挺不错的，可以效仿下。</p>
-<pre><code>&lt;textarea name=&quot;textarea&quot; id=&quot;textarea&quot; onpropertychange=&quot;this.style.height = this.scrollHeight + &#39;px&#39;;&quot;   
-oninput=&quot;this.style.height=&#39;auto&#39;;this.style.height = this.scrollHeight + &#39;px&#39;&quot; style=&quot;overflow-Y: hidden;&quot;&gt;  
-&lt;/textarea&gt;  </code></pre><p>实际效果测试：<br><textarea name="textarea" id="textarea" onpropertychange="this.style.height = this.scrollHeight + 'px';" oninput="this.style.height='auto';this.style.height = this.scrollHeight + 'px'" style="overflow-Y: hidden;"></textarea></p>
-<h4 id="拓展延伸"><a href="#拓展延伸" class="headerlink" title="拓展延伸"></a><a href="#拓展延伸" title="拓展延伸"></a>拓展延伸</h4><p><a href="http://www.cnblogs.com/yuteng/articles/1894578.html" target="_blank" rel="noopener">1、height、clientHeight、scrollHeight、offsetHeight的区别</a><br><a href="https://yq.aliyun.com/articles/20672" target="_blank" rel="noopener">2、textarea其他两种方式实现高度自适应</a></p>
-
                 
             </div>
         </article>
