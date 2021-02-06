@@ -19,24 +19,35 @@
 
         </div>
         <nav class="header-nav">
+			
             
             <a href="/" class="header-nav-link" >
-                Home
+                首页
             </a>
             
+			
+			
+			<a href="/categories" class="header-nav-link" >
+			    分类
+			</a>
+			
 
             
             <a href="/archives" class="header-nav-link">
-                Archives
+                归档
             </a>
             
 
             
             <a href="/tags" class="header-nav-link">
-                Tags
+                标签
             </a>
             
 
+            
+            <a href="/about/" class="header-nav-link">
+                关于
+            </a>
             
         </nav>
     </div>
@@ -57,19 +68,19 @@
         <ul class="mobile-menu-list">
             <li class="mobile-menu-item">
                 <i class="iconfont icon-home"></i>
-                <a href="/" class="mobile-nav-link">Home</a>
+                <a href="/" class="mobile-nav-link">首页</a>
             </li>
             <li class="mobile-menu-item">
                 <i class="iconfont icon-archive"></i>
-                <a href="/archives" class="mobile-nav-link">Archives</a>
+                <a href="/archives" class="mobile-nav-link">归档</a>
             </li>
             <li class="mobile-menu-item">
                 <i class="iconfont icon-tag"></i>
-                <a href="/tags" class="mobile-nav-link">Tags</a>
+                <a href="/tags" class="mobile-nav-link">标签</a>
             </li>
             <li class="mobile-menu-item">
                 <i class="iconfont icon-about"></i>
-                <a href="/about/" class="mobile-nav-link">About</a>
+                <a href="/about/" class="mobile-nav-link">关于</a>
             </li>
         </ul>
     </nav>
@@ -83,6 +94,33 @@
 <div class="main">
     <div class="content-inner">
         <div class="posts">
+    
+        <article class="post-abstract">
+            <div class="post-title">
+                <h2><a class="post-title-link" href="/2021/02/03/%E6%97%A5%E5%B8%B8/">日常</a></h2>
+            </div>
+            <div class="post-meta">
+                <span class="post-time">2021-02-03</span>
+                
+                <span class="post-category">
+                    
+                    <a class="category" href="/categories/Hexo/">Hexo</a>
+                    
+                </span>
+                
+            </div>
+            <div class="post-content">
+                
+                    <h5 id="日常"><a href="#日常" class="headerlink" title="日常"></a>日常</h5>
+                    <div class="read-more">
+                        <a href="/2021/02/03/%E6%97%A5%E5%B8%B8/" class="read-more-link">
+                            阅读全文
+                            <i class="iconfont icon-readmore"></i>
+                        </a>
+                    </div>
+                
+            </div>
+        </article>
     
         <article class="post-abstract">
             <div class="post-title">
@@ -103,7 +141,7 @@
                     <p>升级了MacOS系统之后，提交代码到github失败，出现了错误，如下：</p>
                     <div class="read-more">
                         <a href="/2021/01/28/mac%E4%BD%BF%E7%94%A8git,svn%E6%8F%90%E4%BA%A4%E5%A4%B1%E8%B4%A5%E6%8A%A5%E9%94%99xcrun/" class="read-more-link">
-                            ReadMore
+                            阅读全文
                             <i class="iconfont icon-readmore"></i>
                         </a>
                     </div>
@@ -130,7 +168,7 @@
                     <p>elementui使用的cascader级联省市区
                     <div class="read-more">
                         <a href="/2021/01/28/%E5%85%A8%E5%9B%BD%E7%9C%81%E5%B8%82%E5%8C%BAjson/" class="read-more-link">
-                            ReadMore
+                            阅读全文
                             <i class="iconfont icon-readmore"></i>
                         </a>
                     </div>
@@ -210,7 +248,7 @@ that.formData.sampleList.push(n)  // push后视图不会更新  </code></pre><p>
 that.formData.sampleList.push(n)  </code></pre>
                     <div class="read-more">
                         <a href="/2019/04/03/Vue%E9%87%8Cpush%E6%96%B9%E6%B3%95%E7%9A%84%E8%A7%86%E5%9B%BE%E4%B8%8D%E6%9B%B4%E6%96%B0/" class="read-more-link">
-                            ReadMore
+                            阅读全文
                             <i class="iconfont icon-readmore"></i>
                         </a>
                     </div>
@@ -232,7 +270,7 @@ that.formData.sampleList.push(n)  </code></pre>
 <pre><code>&lt;title&gt;&lt;%= page.title ? page.title : config.title %&gt;&lt;/title&gt;  </code></pre><p>即可有动态title</p>
                     <div class="read-more">
                         <a href="/2018/11/28/Hexo%E5%8A%A8%E6%80%81%E4%B8%AA%E6%80%A7%E6%A0%87%E9%A2%98/" class="read-more-link">
-                            ReadMore
+                            阅读全文
                             <i class="iconfont icon-readmore"></i>
                         </a>
                     </div>
@@ -253,34 +291,7 @@ that.formData.sampleList.push(n)  </code></pre>
                     <p>时常用到一些循环判断对比，想的最多的是for循环，后端返回的geneList是有几千条gene一维数组，数据结构为<code>list:[gene1,gene2,gene3,…]</code>，添加功能时不愿意改结构，response里增加了个<code>list1:[gene2,gene8]</code>这样的两对数据，进行循环对比，使同时存在于数组1和数组2数据的加上特殊颜色标识，for循环嵌套在dom里走不通，要实现得用钩子函数重构数组<br>
                     <div class="read-more">
                         <a href="/2018/11/23/js%E5%88%A4%E6%96%AD%E6%95%B0%E7%BB%84%E4%B8%AD%E6%98%AF%E5%90%A6%E6%9C%89%E6%9F%90%E4%B8%AA%E5%80%BC%E5%AD%98%E5%9C%A8/" class="read-more-link">
-                            ReadMore
-                            <i class="iconfont icon-readmore"></i>
-                        </a>
-                    </div>
-                
-            </div>
-        </article>
-    
-        <article class="post-abstract">
-            <div class="post-title">
-                <h2><a class="post-title-link" href="/2018/11/22/hexo%E9%87%8C%E7%9A%84code%E4%BB%A3%E7%A0%81%E9%AB%98%E4%BA%AE/">hexo里的code代码高亮</a></h2>
-            </div>
-            <div class="post-meta">
-                <span class="post-time">2018-11-22</span>
-                
-            </div>
-            <div class="post-content">
-                
-                    <p>Hexo博客弄好之后，代码高亮显得太单调了，以前折腾wordpress的时候用param.js不太适合这个，多方查看找到个<a href="https://github.com/google/code-prettify" target="_blank" rel="noopener">prettify</a> 插件，尝试了一下之后效果还不错。</p>
-<p>先关闭Hexo的代码高亮功能，修改根目录下的配置文件<code>_config.yml</code>  </p>
-<pre><code>highlight:  
- enable: false  
- line_number: false   
- auto_detect: false  
- tab_replace:  </code></pre>
-                    <div class="read-more">
-                        <a href="/2018/11/22/hexo%E9%87%8C%E7%9A%84code%E4%BB%A3%E7%A0%81%E9%AB%98%E4%BA%AE/" class="read-more-link">
-                            ReadMore
+                            阅读全文
                             <i class="iconfont icon-readmore"></i>
                         </a>
                     </div>
@@ -294,7 +305,7 @@ that.formData.sampleList.push(n)  </code></pre>
         
         
         <a class="next" href="/page/2/">
-            Next
+            下一页
             <i class="iconfont icon-next"></i>
         </a>
         

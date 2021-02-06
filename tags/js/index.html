@@ -3,7 +3,7 @@
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
-    <title>hexo里的code代码高亮</title>
+    <title>zeg</title>
     
 <link rel="stylesheet" href="/css/style.css">
 
@@ -93,67 +93,295 @@
 
 <div class="main">
     <div class="content-inner">
-        <div class="posts">
-    <article class="post-whole">
-        <div class="post-title">
-            <h2 class="title">hexo里的code代码高亮</h2>
-            <div class="post-meta">
-                <span class="post-time">2018-11-22</span>
-                
-                <span class="post-visit"> 阅读次数：<span id="busuanzi_value_page_pv"></span></span>
-            </div>
-        </div>
-        <div class="post-toc" id="post-toc">
-    <strong class="post-toc-title">目录</strong>
+        <section class="archive">
     
-    <div class="back-to-top" id="back-to-top">
-        <a href="javascript:void(0);">回到顶部</a>
+    <div class="archive-title tag">
+        <h2 class="archive-name">js</h2>
     </div>
-</div>
-        <div class="post-content">
-            <p>Hexo博客弄好之后，代码高亮显得太单调了，以前折腾wordpress的时候用param.js不太适合这个，多方查看找到个<a href="https://github.com/google/code-prettify" target="_blank" rel="noopener">prettify</a> 插件，尝试了一下之后效果还不错。</p>
-<p>先关闭Hexo的代码高亮功能，修改根目录下的配置文件<code>_config.yml</code>  </p>
-<pre><code>highlight:  
- enable: false  
- line_number: false   
- auto_detect: false  
- tab_replace:  </code></pre><a id="more"></a>
-<p>然后下载 <a href="https://github.com/google/code-prettify" target="_blank" rel="noopener">prettify</a>，把css和js文件丢到对应的<code>hexo\themes\themeName\source\css、js</code>文件夹里面，并引入</p>
-<p>js引入位置在<code>hexo\themes\themeName\layout\layout.ejs</code>内：  </p>
-<pre><code>&lt;%\- js(&#39;js/prettify.js&#39;) %&gt;  </code></pre><p>css引入位置在  </p>
-<pre><code>&lt;%\- css(&#39;css/tomorrow-night.min.css&#39;) %&gt;  </code></pre><p>并且在页面加载完毕后调用  </p>
-<pre><code>$(&#39;pre&#39;).addClass(&#39;prettyprint linenums&#39;).attr(&#39;style&#39;, &#39;overflow:auto;&#39;);  
- prettyPrint();  </code></pre><p>就这样，设置就完成了，刷新看效果<br>另外，可以在这个地方<a href="https://jmblog.github.io/color-themes-for-google-code-prettify/" target="_blank" rel="noopener">https://jmblog.github.io/color-themes-for-google-code-prettify/</a>选择一套自己喜欢的主题替换上面的prettify.css即可。</p>
+    
 
-        </div>
-        
-    </article>
-</div>
-<div class="paginator">
+    
     
         
-            <a class="prev" href="/2018/11/22/hexo%E8%AE%BE%E7%BD%AE%E7%BD%91%E7%AB%99%E5%9B%BE%E6%A0%87Favicon/">
-                <i class="iconfont icon-prev"></i>
-                <span class="nav-default">hexo设置网站图标Favicon</span>
-                <span class="nav-mobile">上一篇</span>
-            </a>
+            
+            
+
+            
         
-        
-            <a class="next" href="/2018/11/21/%E5%86%99%E5%9C%A8vue%E4%B8%AD%E7%AE%80%E5%8D%95%E7%9A%84%E9%9A%8F%E6%9C%BA%E9%AA%8C%E8%AF%81%E7%A0%81/">
-                <span class="nav-default">写在vue中简单的随机验证码</span>
-                <span class="nav-mobile">下一篇</span>
-                <i class="iconfont icon-next"></i>
-            </a>
-        
+
     
-</div>
-<div id="comment-container">
+        
+            
+            
 
+            
+        
 
-	<div id="vcomments"></div>
+    
+        
+            
+            
 
+            
+        
 
-</div>
+    
+        
+            
+            
+
+            
+        
+
+    
+        
+            
+            
+
+            
+        
+
+    
+        
+            
+            
+
+            
+        
+
+    
+        
+            
+            
+
+            
+        
+
+    
+        
+            
+            
+
+            
+        
+
+    
+        
+            
+            
+
+            
+        
+
+    
+        
+            
+            
+
+            
+        
+
+    
+        
+            
+            
+
+            
+        
+
+    
+        
+            
+            
+
+            
+        
+
+    
+        
+            
+            
+
+            
+        
+
+    
+        
+            
+            
+
+            
+        
+
+    
+        
+            
+            
+
+            
+        
+
+    
+        
+            
+            
+
+            
+        
+
+    
+        
+            
+            
+
+            
+        
+
+    
+        
+            
+            
+
+            
+        
+
+    
+        
+            
+            
+
+            
+        
+
+    
+        
+            
+            
+
+            
+        
+
+    
+        
+            
+            
+
+            
+        
+
+    
+        
+            
+            
+                
+            
+
+            
+        
+
+    
+        
+            
+            
+
+            
+        
+
+    
+        
+            
+            
+
+            
+        
+
+    
+        
+            
+            
+                
+            
+
+            
+        
+
+    
+        
+            
+            
+                
+                    
+                
+            
+
+            
+                <div class="archive-post">
+                    <span class="archive-post-time">
+                    2016-12-05
+                    </span>
+                    <span class="archive-post-title">
+                        <a class="archive-post-link" href="/2016/12/05/%E6%95%B0%E7%BB%84%E7%9A%84%E5%92%8C%E5%B9%B6%E5%92%8C%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%92%8C%E5%B9%B6/">数组的和并和对象的和并</a>
+                    </span>
+                </div>
+            
+        
+
+    
+        
+            
+            
+                
+            
+
+            
+        
+
+    
+        
+            
+            
+
+            
+        
+
+    
+        
+            
+            
+                
+            
+
+            
+        
+
+    
+        
+            
+            
+                
+            
+
+            
+        
+
+    
+        
+            
+            
+
+            
+        
+
+    
+        
+            
+            
+
+            
+        
+
+    
+</section>
     </div>
 </div>
 <footer class="footer-social">
@@ -197,7 +425,7 @@ $('pre').addClass('prettyprint linenums').attr('style', 'overflow:auto;');
 	       'webkitHidden' in document ? 'webkitHidden' :    
 	       'mozHidden' in document ? 'mozHidden' :    
 	       null;
-	   var realTitle = 'hexo里的code代码高亮';
+	   var realTitle = 'zeg';
 	   var visibilityChangeEvent = hiddenProperty.replace(/hidden/i, 'visibilitychange');
 	   var onVisibilityChange = function(){
 	       if (!document[hiddenProperty]) {

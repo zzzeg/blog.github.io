@@ -19,24 +19,35 @@
 
         </div>
         <nav class="header-nav">
+			
             
             <a href="/" class="header-nav-link" >
-                Home
+                首页
             </a>
             
+			
+			
+			<a href="/categories" class="header-nav-link" >
+			    分类
+			</a>
+			
 
             
             <a href="/archives" class="header-nav-link">
-                Archives
+                归档
             </a>
             
 
             
             <a href="/tags" class="header-nav-link">
-                Tags
+                标签
             </a>
             
 
+            
+            <a href="/about/" class="header-nav-link">
+                关于
+            </a>
             
         </nav>
     </div>
@@ -57,19 +68,19 @@
         <ul class="mobile-menu-list">
             <li class="mobile-menu-item">
                 <i class="iconfont icon-home"></i>
-                <a href="/" class="mobile-nav-link">Home</a>
+                <a href="/" class="mobile-nav-link">首页</a>
             </li>
             <li class="mobile-menu-item">
                 <i class="iconfont icon-archive"></i>
-                <a href="/archives" class="mobile-nav-link">Archives</a>
+                <a href="/archives" class="mobile-nav-link">归档</a>
             </li>
             <li class="mobile-menu-item">
                 <i class="iconfont icon-tag"></i>
-                <a href="/tags" class="mobile-nav-link">Tags</a>
+                <a href="/tags" class="mobile-nav-link">标签</a>
             </li>
             <li class="mobile-menu-item">
                 <i class="iconfont icon-about"></i>
-                <a href="/about/" class="mobile-nav-link">About</a>
+                <a href="/about/" class="mobile-nav-link">关于</a>
             </li>
         </ul>
     </nav>
@@ -83,6 +94,27 @@
 <div class="main">
     <div class="content-inner">
         <div class="posts">
+    
+        <article class="post-abstract">
+            <div class="post-title">
+                <h2><a class="post-title-link" href="/2017/11/08/Vue%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA/">Vue快速搭建</a></h2>
+            </div>
+            <div class="post-meta">
+                <span class="post-time">2017-11-08</span>
+                
+            </div>
+            <div class="post-content">
+                
+                    <p>截止到这篇文章发布，搭建开发环境用到的组件、工具：<a href="http://lib.csdn.net/base/nodejs" target="_blank" rel="noopener" title="Node.js知识库">Node.js</a> 8.2.1、npm 5.3.0、webpack 2.6.1、sublime3<br>
+                    <div class="read-more">
+                        <a href="/2017/11/08/Vue%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA/" class="read-more-link">
+                            阅读全文
+                            <i class="iconfont icon-readmore"></i>
+                        </a>
+                    </div>
+                
+            </div>
+        </article>
     
         <article class="post-abstract">
             <div class="post-title">
@@ -120,7 +152,7 @@ console.log(c);// 1,2,3,4,5,6
 console.log(a);// 1,2,3  不改变本身  </code></pre>
                     <div class="read-more">
                         <a href="/2016/12/05/%E6%95%B0%E7%BB%84%E7%9A%84%E5%92%8C%E5%B9%B6%E5%92%8C%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%92%8C%E5%B9%B6/" class="read-more-link">
-                            ReadMore
+                            阅读全文
                             <i class="iconfont icon-readmore"></i>
                         </a>
                     </div>
@@ -141,7 +173,7 @@ console.log(a);// 1,2,3  不改变本身  </code></pre>
                     <p>项目上需要一个文件重命名功能，就像百度网盘的文件重命名一样，只选中文件名不选中后缀:<br>这样子：<br><img src="http://zzzeg.github.io/img/0001.jpg" alt=""><br>代码如下：<br>
                     <div class="read-more">
                         <a href="/2016/10/18/js-jquery%E9%80%89%E4%B8%AD%E9%83%A8%E5%88%86%E6%96%87%E5%AD%97%E5%8A%9F%E8%83%BD/" class="read-more-link">
-                            ReadMore
+                            阅读全文
                             <i class="iconfont icon-readmore"></i>
                         </a>
                     </div>
@@ -219,7 +251,7 @@ console.log(a);// 1,2,3  不改变本身  </code></pre>
                     <p>由于项目需求，写到某个插件的时候，需要阻止backspace等浏览器默认事件，但是用e.preventDefault()无论如何都搞不定，火狐和谷歌在input或textarea失焦之后，按backspace都执行了后退(上一页)，网上查了资料，也问了不少人，最终原生js解决，以此为记：  </p>
                     <div class="read-more">
                         <a href="/2016/06/21/javascript%E9%98%BB%E6%AD%A2%E6%B5%8F%E8%A7%88%E5%99%A8%E5%90%8E%E9%80%80backspace%E9%94%AE/" class="read-more-link">
-                            ReadMore
+                            阅读全文
                             <i class="iconfont icon-readmore"></i>
                         </a>
                     </div>
@@ -247,41 +279,18 @@ document.body.appendChild(new_element);  </code></pre><p>分析：利用document
             </div>
         </article>
     
-        <article class="post-abstract">
-            <div class="post-title">
-                <h2><a class="post-title-link" href="/2015/03/07/filter%E6%BB%A4%E9%95%9C/">filter滤镜</a></h2>
-            </div>
-            <div class="post-meta">
-                <span class="post-time">2015-03-07</span>
-                
-            </div>
-            <div class="post-content">
-                
-                    <p>在IE中使用CSS3的旋转效果是不能实现的，，但是我又想把IE旋转效果跟其他浏览使用CSS3 rotate(deg)一样。在百度找了一下，发现IE里面有一款滤镜，可以实现旋转角度。</p>
-<p>代码如下：  </p>
-<pre><code>filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod=&#39;auto expand&#39;, M11=0.70710678, M12=-0.70710678, M21=0.70710678, M22=0.70710678);  </code></pre>
-                    <div class="read-more">
-                        <a href="/2015/03/07/filter%E6%BB%A4%E9%95%9C/" class="read-more-link">
-                            ReadMore
-                            <i class="iconfont icon-readmore"></i>
-                        </a>
-                    </div>
-                
-            </div>
-        </article>
-    
 </div>
 <div class="paginator">
     
         
         <a class="prev" href="/page/2/">
             <i class="iconfont icon-prev"></i>
-            Prev
+            上一页
         </a>
         
         
         <a class="next" href="/page/4/">
-            Next
+            下一页
             <i class="iconfont icon-next"></i>
         </a>
         
