@@ -1,33 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Vue快速搭建</title>
-    <url>/2017/11/08/Vue%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA/</url>
-    <content><![CDATA[<p>截止到这篇文章发布，搭建开发环境用到的组件、工具：<a href="http://lib.csdn.net/base/nodejs" target="_blank" rel="noopener" title="Node.js知识库">Node.js</a> 8.2.1、npm 5.3.0、webpack 2.6.1、sublime3<br> <a id="more"></a><br>现在开始安装环境</p>
-<h4 id="安装nodejs"><a href="#安装nodejs" class="headerlink" title="安装nodejs"></a><a href="#安装nodejs" title="安装nodejs"></a>安装nodejs</h4><p>可以在终端里下载，但是不推荐，npm的版本会报错<br>去nodejs官网下载即可，地址：<a href="http://nodejs.cn/" target="_blank" rel="noopener">http://nodejs.cn/</a>中文网</p>
-<h4 id="安装vue淘宝镜像"><a href="#安装vue淘宝镜像" class="headerlink" title="安装vue淘宝镜像"></a><a href="#安装vue淘宝镜像" title="安装vue淘宝镜像"></a>安装vue淘宝镜像</h4><pre><code>npm install -g vue –registry=https://registry.npm.taobao.org  </code></pre><h4 id="安装webpack"><a href="#安装webpack" class="headerlink" title="安装webpack"></a><a href="#安装webpack" title="安装webpack"></a>安装webpack</h4><pre><code>npm install webpack -g  </code></pre><h4 id="安装vue脚手架"><a href="#安装vue脚手架" class="headerlink" title="安装vue脚手架"></a><a href="#安装vue脚手架" title="安装vue脚手架"></a>安装vue脚手架</h4><pre><code>npm install vue-cli -g  </code></pre><p>—————-如果第二次编写新的vue项目，就可以在这里开始了—————–</p>
-<h4 id="根据模板创建项目"><a href="#根据模板创建项目" class="headerlink" title="根据模板创建项目"></a><a href="#根据模板创建项目" title="根据模板创建项目"></a>根据模板创建项目</h4><p>vue init webpack 项目名字&lt;项目名字不能用中文&gt;<br>接着开始下载 vue2.0模板，网络不好的下载前最好启动ssh (连接代理，否则过程会比较漫长)…</p>
-<h4 id="会有一些初始化的设置，如下输入"><a href="#会有一些初始化的设置，如下输入" class="headerlink" title="会有一些初始化的设置，如下输入:"></a><a href="#会有一些初始化的设置，如下输入" title="会有一些初始化的设置，如下输入:"></a>会有一些初始化的设置，如下输入:</h4><pre><code>Project name (vue-test) 直接回车默认  
-Project description (A Vue.js project) 直接回车默认  
-Author 直接回车默认  
-Install vue-router? (Y/n) Y  
-Use ESLint to lint your code? (Y/n) n  
-Setup unit tests with Karma + Mocha? (Y/n) n (单元测试不需要)  
-Setup e2e tests with Nightwatch? (Y/n) n (单元测试不需要)  </code></pre><p><strong>进入项目<br>win + R 键 输入 cmd<br>cd 项目名字 或者 cd /d 盘符:\项目名<br>例： cd /d e:\webs</strong></p>
-<h4 id="安装项目依赖"><a href="#安装项目依赖" class="headerlink" title="安装项目依赖"></a><a href="#安装项目依赖" title="安装项目依赖"></a>安装项目依赖</h4><pre><code>npm install  //下载node_modules文件夹的过程，这个文件夹不能拷贝，拷贝会导致各种错误...  </code></pre><h4 id="安装需要用到的组件"><a href="#安装需要用到的组件" class="headerlink" title="安装需要用到的组件"></a><a href="#安装需要用到的组件" title="安装需要用到的组件"></a>安装需要用到的组件</h4><pre><code>\- (1)npm install sass-loader --save-dev  
-\- (2)npm install gulp-sass --save  
-\- (3)npm install less --save  
-\- (4)npm install less-loader --save      // sass和less 二选一就行  
-\- (5)npm install --save axios   
-\- (6)npm install element-ui@1.4.2 -S   
-\- (7)npm install vuex --save   
-\- (8)npm install moment      // 日期格式化  
-\- (9)npm install vue-router vue-resource --save   // 路由模块vue-router和网络请求模块vue-resource  </code></pre><h4 id="启动项目"><a href="#启动项目" class="headerlink" title="启动项目"></a><a href="#启动项目" title="启动项目"></a>启动项目</h4><pre><code>npm run dev  </code></pre><h4 id="发布项目"><a href="#发布项目" class="headerlink" title="发布项目"></a><a href="#发布项目" title="发布项目"></a>发布项目</h4><pre><code>npm run build  </code></pre>]]></content>
-      <categories>
-        <category>代码</category>
-      </categories>
-  </entry>
-  <entry>
     <title>Hexo动态个性标题</title>
     <url>/2018/11/28/Hexo%E5%8A%A8%E6%80%81%E4%B8%AA%E6%80%A7%E6%A0%87%E9%A2%98/</url>
     <content><![CDATA[<p>装完乱七八糟的东西之后，发现网站title一直是同一个内容，翻到模版<code>head.ejs</code>里，当前配置的title改为  </p>
@@ -82,6 +55,33 @@ content:&quot;&quot;
       </categories>
   </entry>
   <entry>
+    <title>Vue快速搭建</title>
+    <url>/2017/11/08/Vue%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA/</url>
+    <content><![CDATA[<p>截止到这篇文章发布，搭建开发环境用到的组件、工具：<a href="http://lib.csdn.net/base/nodejs" target="_blank" rel="noopener" title="Node.js知识库">Node.js</a> 8.2.1、npm 5.3.0、webpack 2.6.1、sublime3<br> <a id="more"></a><br>现在开始安装环境</p>
+<h4 id="安装nodejs"><a href="#安装nodejs" class="headerlink" title="安装nodejs"></a><a href="#安装nodejs" title="安装nodejs"></a>安装nodejs</h4><p>可以在终端里下载，但是不推荐，npm的版本会报错<br>去nodejs官网下载即可，地址：<a href="http://nodejs.cn/" target="_blank" rel="noopener">http://nodejs.cn/</a>中文网</p>
+<h4 id="安装vue淘宝镜像"><a href="#安装vue淘宝镜像" class="headerlink" title="安装vue淘宝镜像"></a><a href="#安装vue淘宝镜像" title="安装vue淘宝镜像"></a>安装vue淘宝镜像</h4><pre><code>npm install -g vue –registry=https://registry.npm.taobao.org  </code></pre><h4 id="安装webpack"><a href="#安装webpack" class="headerlink" title="安装webpack"></a><a href="#安装webpack" title="安装webpack"></a>安装webpack</h4><pre><code>npm install webpack -g  </code></pre><h4 id="安装vue脚手架"><a href="#安装vue脚手架" class="headerlink" title="安装vue脚手架"></a><a href="#安装vue脚手架" title="安装vue脚手架"></a>安装vue脚手架</h4><pre><code>npm install vue-cli -g  </code></pre><p>—————-如果第二次编写新的vue项目，就可以在这里开始了—————–</p>
+<h4 id="根据模板创建项目"><a href="#根据模板创建项目" class="headerlink" title="根据模板创建项目"></a><a href="#根据模板创建项目" title="根据模板创建项目"></a>根据模板创建项目</h4><p>vue init webpack 项目名字&lt;项目名字不能用中文&gt;<br>接着开始下载 vue2.0模板，网络不好的下载前最好启动ssh (连接代理，否则过程会比较漫长)…</p>
+<h4 id="会有一些初始化的设置，如下输入"><a href="#会有一些初始化的设置，如下输入" class="headerlink" title="会有一些初始化的设置，如下输入:"></a><a href="#会有一些初始化的设置，如下输入" title="会有一些初始化的设置，如下输入:"></a>会有一些初始化的设置，如下输入:</h4><pre><code>Project name (vue-test) 直接回车默认  
+Project description (A Vue.js project) 直接回车默认  
+Author 直接回车默认  
+Install vue-router? (Y/n) Y  
+Use ESLint to lint your code? (Y/n) n  
+Setup unit tests with Karma + Mocha? (Y/n) n (单元测试不需要)  
+Setup e2e tests with Nightwatch? (Y/n) n (单元测试不需要)  </code></pre><p><strong>进入项目<br>win + R 键 输入 cmd<br>cd 项目名字 或者 cd /d 盘符:\项目名<br>例： cd /d e:\webs</strong></p>
+<h4 id="安装项目依赖"><a href="#安装项目依赖" class="headerlink" title="安装项目依赖"></a><a href="#安装项目依赖" title="安装项目依赖"></a>安装项目依赖</h4><pre><code>npm install  //下载node_modules文件夹的过程，这个文件夹不能拷贝，拷贝会导致各种错误...  </code></pre><h4 id="安装需要用到的组件"><a href="#安装需要用到的组件" class="headerlink" title="安装需要用到的组件"></a><a href="#安装需要用到的组件" title="安装需要用到的组件"></a>安装需要用到的组件</h4><pre><code>\- (1)npm install sass-loader --save-dev  
+\- (2)npm install gulp-sass --save  
+\- (3)npm install less --save  
+\- (4)npm install less-loader --save      // sass和less 二选一就行  
+\- (5)npm install --save axios   
+\- (6)npm install element-ui@1.4.2 -S   
+\- (7)npm install vuex --save   
+\- (8)npm install moment      // 日期格式化  
+\- (9)npm install vue-router vue-resource --save   // 路由模块vue-router和网络请求模块vue-resource  </code></pre><h4 id="启动项目"><a href="#启动项目" class="headerlink" title="启动项目"></a><a href="#启动项目" title="启动项目"></a>启动项目</h4><pre><code>npm run dev  </code></pre><h4 id="发布项目"><a href="#发布项目" class="headerlink" title="发布项目"></a><a href="#发布项目" title="发布项目"></a>发布项目</h4><pre><code>npm run build  </code></pre>]]></content>
+      <categories>
+        <category>代码</category>
+      </categories>
+  </entry>
+  <entry>
     <title>Vue项目设置局域网访问</title>
     <url>/2019/07/01/Vue%E9%A1%B9%E7%9B%AE%E8%AE%BE%E7%BD%AE%E5%B1%80%E5%9F%9F%E7%BD%91%E8%AE%BF%E9%97%AE/</url>
     <content><![CDATA[<p>有两种方式：</p>
@@ -103,6 +103,19 @@ content:&quot;&quot;
     autoOpenBrowser: true,
     host: &#39;0.0.0.0&#39;,
 }</code></pre>]]></content>
+      <categories>
+        <category>代码</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>a.js里调用b.js的方法</title>
+    <url>/2016/04/16/a-js%E9%87%8C%E8%B0%83%E7%94%A8b-js%E7%9A%84%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[<p>在调用之前，引入如下4行代码即可 </p>
+<pre><code>new_element=document.createElement(&quot;script&quot;);   
+new_element.setAttribute(&quot;type&quot;,&quot;text/javascript&quot;);   
+new_element.setAttribute(&quot;src&quot;,&quot;b.js&quot;);  
+document.body.appendChild(new_element);  </code></pre><p>分析：利用document.createElement(“script”)生成了一个script的标签，设置其type属性为text/javascript，src为a.js(这里的a.js同b.js放在同一个目录，也可放在不同的目录)。最后将这个标签动态地加入body中。如此一来，我们就可以调用到不同js文件中的方法了</p>
+]]></content>
       <categories>
         <category>代码</category>
       </categories>
@@ -133,19 +146,6 @@ vm.b = 2
 })  </code></pre><p>可以添加一个新的 age 属性到嵌套的 userProfile 对象：  </p>
 <pre><code>Vue.set(vm.userProfile, &#39;age&#39;, 27)  </code></pre><p>全局vm.$set的方式  </p>
 <pre><code>vm.$set(vm.userProfile, &#39;age&#39;, 27) </code></pre>]]></content>
-      <categories>
-        <category>代码</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>a.js里调用b.js的方法</title>
-    <url>/2016/04/16/a-js%E9%87%8C%E8%B0%83%E7%94%A8b-js%E7%9A%84%E6%96%B9%E6%B3%95/</url>
-    <content><![CDATA[<p>在调用之前，引入如下4行代码即可 </p>
-<pre><code>new_element=document.createElement(&quot;script&quot;);   
-new_element.setAttribute(&quot;type&quot;,&quot;text/javascript&quot;);   
-new_element.setAttribute(&quot;src&quot;,&quot;b.js&quot;);  
-document.body.appendChild(new_element);  </code></pre><p>分析：利用document.createElement(“script”)生成了一个script的标签，设置其type属性为text/javascript，src为a.js(这里的a.js同b.js放在同一个目录，也可放在不同的目录)。最后将这个标签动态地加入body中。如此一来，我们就可以调用到不同js文件中的方法了</p>
-]]></content>
       <categories>
         <category>代码</category>
       </categories>
@@ -266,6 +266,128 @@ W3C代码：background:-webkit-linear-gradient(#000000 0, #ffffff 100%);  </code
       </tags>
   </entry>
   <entry>
+    <title>hexo里的code代码高亮</title>
+    <url>/2018/11/22/hexo%E9%87%8C%E7%9A%84code%E4%BB%A3%E7%A0%81%E9%AB%98%E4%BA%AE/</url>
+    <content><![CDATA[<p>Hexo博客弄好之后，代码高亮显得太单调了，以前折腾wordpress的时候用param.js不太适合这个，多方查看找到个<a href="https://github.com/google/code-prettify" target="_blank" rel="noopener">prettify</a> 插件，尝试了一下之后效果还不错。</p>
+<p>先关闭Hexo的代码高亮功能，修改根目录下的配置文件<code>_config.yml</code>  </p>
+<pre><code>highlight:  
+ enable: false  
+ line_number: false   
+ auto_detect: false  
+ tab_replace:  </code></pre><a id="more"></a>
+<p>然后下载 <a href="https://github.com/google/code-prettify" target="_blank" rel="noopener">prettify</a>，把css和js文件丢到对应的<code>hexo\themes\themeName\source\css、js</code>文件夹里面，并引入</p>
+<p>js引入位置在<code>hexo\themes\themeName\layout\layout.ejs</code>内：  </p>
+<pre><code>&lt;%\- js(&#39;js/prettify.js&#39;) %&gt;  </code></pre><p>css引入位置在  </p>
+<pre><code>&lt;%\- css(&#39;css/tomorrow-night.min.css&#39;) %&gt;  </code></pre><p>并且在页面加载完毕后调用  </p>
+<pre><code>$(&#39;pre&#39;).addClass(&#39;prettyprint linenums&#39;).attr(&#39;style&#39;, &#39;overflow:auto;&#39;);  
+ prettyPrint();  </code></pre><p>就这样，设置就完成了，刷新看效果<br>另外，可以在这个地方<a href="https://jmblog.github.io/color-themes-for-google-code-prettify/" target="_blank" rel="noopener">https://jmblog.github.io/color-themes-for-google-code-prettify/</a>选择一套自己喜欢的主题替换上面的prettify.css即可。</p>
+]]></content>
+      <categories>
+        <category>代码</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>git日常</title>
+    <url>/2018/06/28/git%E6%97%A5%E5%B8%B8/</url>
+    <content><![CDATA[<h3 id="上传"><a href="#上传" class="headerlink" title="上传"></a>上传</h3><h4 id="初始化仓库"><a href="#初始化仓库" class="headerlink" title="初始化仓库"></a>初始化仓库</h4><pre><code>git init</code></pre><h4 id="将文件添加到仓库"><a href="#将文件添加到仓库" class="headerlink" title="将文件添加到仓库"></a>将文件添加到仓库</h4><pre><code>git add .</code></pre><h4 id="文件commit到仓库"><a href="#文件commit到仓库" class="headerlink" title="文件commit到仓库"></a>文件commit到仓库</h4><pre><code>git commit -m &#39;注释&#39;</code></pre><h4 id="去github创建repository，记下地址，https和git都行，https老是出问题，建议用git；然后将本地仓库跟github上新建的repository关联上"><a href="#去github创建repository，记下地址，https和git都行，https老是出问题，建议用git；然后将本地仓库跟github上新建的repository关联上" class="headerlink" title="去github创建repository，记下地址，https和git都行，https老是出问题，建议用git；然后将本地仓库跟github上新建的repository关联上"></a>去github创建repository，记下地址，https和git都行，https老是出问题，建议用git；然后将本地仓库跟github上新建的repository关联上</h4><pre><code>git remote add origin 仓库的地址</code></pre><h4 id="上传代码到仓库"><a href="#上传代码到仓库" class="headerlink" title="上传代码到仓库"></a>上传代码到仓库</h4><pre><code>git push -u origin master</code></pre><p>执行完没问题就完事了，如果上传失败，可能是因为README.md没下载下来，先下载再上传</p>
+<pre><code>git pull --rebase origin master</code></pre><h3 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h3><h4 id="第一次下载"><a href="#第一次下载" class="headerlink" title="第一次下载"></a>第一次下载</h4><pre><code>进到目录，git clone 地址</code></pre><h4 id="下载更新"><a href="#下载更新" class="headerlink" title="下载更新"></a>下载更新</h4><pre><code>//方法一
+$ git fetch origin master //从远程的origin仓库的master分支下载代码到本地的origin master
+$ git log -p master.. origin/master//比较本地的仓库和远程参考的区别
+$ git merge origin/master//把远程下载下来的代码合并到本地仓库，远程的和本地的合并
+
+//方法二
+$ git fetch origin master:temp //从远程的origin仓库的master分支下载到本地并新建一个分支temp
+$ git diff temp//比较master分支和temp分支的不同
+$ git merge temp//合并temp分支到master分支
+$ git branch -d temp//删除temp
+
+//方法三
+$ git pull //更新远程代码到本地</code></pre>]]></content>
+      <categories>
+        <category>代码</category>
+      </categories>
+      <tags>
+        <tag>git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>javascript阻止浏览器后退backspace键</title>
+    <url>/2016/06/21/javascript%E9%98%BB%E6%AD%A2%E6%B5%8F%E8%A7%88%E5%99%A8%E5%90%8E%E9%80%80backspace%E9%94%AE/</url>
+    <content><![CDATA[<p>由于项目需求，写到某个插件的时候，需要阻止backspace等浏览器默认事件，但是用e.preventDefault()无论如何都搞不定，火狐和谷歌在input或textarea失焦之后，按backspace都执行了后退(上一页)，网上查了资料，也问了不少人，最终原生js解决，以此为记：  </p>
+<a id="more"></a>
+<h3 id="自己写的简单版"><a href="#自己写的简单版" class="headerlink" title="自己写的简单版"></a><a href="#自己写的简单版" title="自己写的简单版"></a>自己写的简单版</h3><pre><code>//禁止后退键（Backspace）  
+function banBackSpace(e){  
+ var ev = e || window.event;//获取event对象  
+ var focus=$(cid).is(&quot;:focus&quot;)?true:false;  
+ var flag1=(ev.keyCode == 8 &amp;&amp; focus==false &amp;&amp; $(&quot;div.adr_base&quot;).length&gt;0)?true:false;  
+ if(flag1){  
+ $(&quot;div.check&quot;).siblings(cid).focus();  
+ $(&quot;div.check&quot;).remove();  
+ return false;  
+ }  
+}  
+//禁止后退键 作用于Firefox、Opera  
+document.onkeypress=banBackSpace;  
+//禁止后退键 作用于IE、Chrome  
+document.onkeydown=banBackSpace;  
+//window.history.forward(1);//屏蔽浏览器自带的后退键  </code></pre><h3 id="网上的完整案例"><a href="#网上的完整案例" class="headerlink" title="网上的完整案例"></a><a href="#网上的完整案例" title="网上的完整案例"></a>网上的完整案例</h3><pre><code>//处理键盘事件 禁止后退键（Backspace）密码或单行、多行文本框除外  
+function banBackSpace(e){  
+ var ev = e || window.event;//获取event对象  
+ var obj = ev.target || ev.srcElement;//获取事件  
+ var t = obj.type || obj.getAttribute(&#39;type&#39;);//获取事件源类型  
+ //获取作为判断条件的事件类型  
+ var vReadOnly = obj.getAttribute(&#39;readonly&#39;);  
+ var vEnabled = obj.getAttribute(&#39;enabled&#39;);  
+ //处理null值情况  
+ vReadOnly = (vReadOnly == null) ? false : true;  
+ vEnabled = (vEnabled == null) ? true : vEnabled;  
+ //当敲Backspace键时，事件源类型为密码或单行、多行文本的，  
+ //并且readonly属性为true或enabled属性为false的，则退格键失效  
+ var flag1=(ev.keyCode == 8 &amp;&amp; (t==&quot;password&quot; || t==&quot;text&quot; || t==&quot;textarea&quot;)&amp;&amp; (vReadOnly || vEnabled!=true))?true:false;  
+ //当敲Backspace键时，事件源类型非密码或单行、多行文本的，则退格键失效  
+ var flag2=(ev.keyCode == 8 &amp;&amp; t != &quot;password&quot; &amp;&amp; t != &quot;text&quot; &amp;&amp; t != &quot;textarea&quot;)?true:false;  
+ //判断  
+ if(flag2){  
+ return false;  
+ }  
+ if(flag1){  
+ return false;  
+ }  
+}  
+//禁止后退键 用于Firefox、Opera  
+document.onkeypress=banBackSpace;  
+//禁止后退键 用于IE、Chrome  
+document.onkeydown=banBackSpace;  
+window.history.forward(1);//屏蔽浏览器自带的后退键 </code></pre>]]></content>
+      <categories>
+        <category>代码</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>hexo设置网站图标Favicon</title>
+    <url>/2018/11/22/hexo%E8%AE%BE%E7%BD%AE%E7%BD%91%E7%AB%99%E5%9B%BE%E6%A0%87Favicon/</url>
+    <content><![CDATA[<p>网站发布后总是报错favicon.ico 403 not found. 坑很多啊！</p>
+<h4 id="生成favicon"><a href="#生成favicon" class="headerlink" title="生成favicon"></a><a href="#生成favicon" title="生成favicon"></a>生成favicon</h4><p>自行ps一个正方形的图标，网页显示的尺寸是16×16，做的时候最好是用32×32，可以<a href="http://www.faviconico.org/" target="_blank" rel="noopener">在线生成ico图标</a>。  </p>
+<a id="more"></a>
+<h4 id="设置位置"><a href="#设置位置" class="headerlink" title="设置位置"></a><a href="#设置位置" title="设置位置"></a>设置位置</h4><p>找到目录<code>hexo\themes\modernist\layout_partial\head.ejs</code>里：  </p>
+<pre><code>&lt;link rel=&quot;icon&quot; type=&quot;image/x-icon&quot; href=&quot;&lt;%- config.root %&gt;favicon.ico&quot;&gt;  
+替换为：  
+&lt;link rel=&quot;icon&quot; type=&quot;image/x-icon&quot; href=&quot;&lt;%- theme.favicon %&gt;&quot;&gt;  
+如果主题文件里没有这句引用，就手动在里面加一下  </code></pre><p>然后把favicon.ico放到hexo\source目录下<br>清除缓存，疯狂刷新页面就出来了</p>
+<h4 id="坑"><a href="#坑" class="headerlink" title="坑"></a><a href="#坑" title="坑"></a>坑</h4><p>ps生成的也好，在线制作的图片也好，都是标量图，处理过实际效果会模糊，要多次调整文字位置的像素占用、字体、以及文字抗锯齿方式 才能让ico在网页上显示不模糊</p>
+<p>多次生成结果：</p>
+<ul>
+<li>图标的垂直位置得居中，也就是说：图标画布的顶边距 = 底边距</li>
+<li>图标自身高度所占用像素点，得是双数</li>
+<li>字体、图标少拐弯，抗锯齿方式最好用”锐利”这种比较清晰，没有模糊边</li>
+</ul>
+<p>我的图标：字体：Gadugi(Regular) + 锐利 + 19像素字(实际图片里高18px)，顶边距=底边距=7px</p>
+]]></content>
+      <categories>
+        <category>代码</category>
+      </categories>
+  </entry>
+  <entry>
     <title>github+Hexo搭建博客</title>
     <url>/2018/11/20/github-Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</url>
     <content><![CDATA[<p>　　以前用wordpress写的博客，因为疏于更新后台，被勤劳的小蜜蜂们各种挂马，服务商给我下通牒的时候我才知道，记录的东西也丢失了七七八八。最近闲下来在看nodejs相关的资料时，无意间了解到hexo，然后决定入坑.  </p>
@@ -341,128 +463,6 @@ hexo clean &amp;&amp; hexo g &amp;&amp; hexo s  </code></pre><h3 id="装完吐�
       </categories>
   </entry>
   <entry>
-    <title>git日常</title>
-    <url>/2018/06/28/git%E6%97%A5%E5%B8%B8/</url>
-    <content><![CDATA[<h3 id="上传"><a href="#上传" class="headerlink" title="上传"></a>上传</h3><h4 id="初始化仓库"><a href="#初始化仓库" class="headerlink" title="初始化仓库"></a>初始化仓库</h4><pre><code>git init</code></pre><h4 id="将文件添加到仓库"><a href="#将文件添加到仓库" class="headerlink" title="将文件添加到仓库"></a>将文件添加到仓库</h4><pre><code>git add .</code></pre><h4 id="文件commit到仓库"><a href="#文件commit到仓库" class="headerlink" title="文件commit到仓库"></a>文件commit到仓库</h4><pre><code>git commit -m &#39;注释&#39;</code></pre><h4 id="去github创建repository，记下地址，https和git都行，https老是出问题，建议用git；然后将本地仓库跟github上新建的repository关联上"><a href="#去github创建repository，记下地址，https和git都行，https老是出问题，建议用git；然后将本地仓库跟github上新建的repository关联上" class="headerlink" title="去github创建repository，记下地址，https和git都行，https老是出问题，建议用git；然后将本地仓库跟github上新建的repository关联上"></a>去github创建repository，记下地址，https和git都行，https老是出问题，建议用git；然后将本地仓库跟github上新建的repository关联上</h4><pre><code>git remote add origin 仓库的地址</code></pre><h4 id="上传代码到仓库"><a href="#上传代码到仓库" class="headerlink" title="上传代码到仓库"></a>上传代码到仓库</h4><pre><code>git push -u origin master</code></pre><p>执行完没问题就完事了，如果上传失败，可能是因为README.md没下载下来，先下载再上传</p>
-<pre><code>git pull --rebase origin master</code></pre><h3 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h3><h4 id="第一次下载"><a href="#第一次下载" class="headerlink" title="第一次下载"></a>第一次下载</h4><pre><code>进到目录，git clone 地址</code></pre><h4 id="下载更新"><a href="#下载更新" class="headerlink" title="下载更新"></a>下载更新</h4><pre><code>//方法一
-$ git fetch origin master //从远程的origin仓库的master分支下载代码到本地的origin master
-$ git log -p master.. origin/master//比较本地的仓库和远程参考的区别
-$ git merge origin/master//把远程下载下来的代码合并到本地仓库，远程的和本地的合并
-
-//方法二
-$ git fetch origin master:temp //从远程的origin仓库的master分支下载到本地并新建一个分支temp
-$ git diff temp//比较master分支和temp分支的不同
-$ git merge temp//合并temp分支到master分支
-$ git branch -d temp//删除temp
-
-//方法三
-$ git pull //更新远程代码到本地</code></pre>]]></content>
-      <categories>
-        <category>代码</category>
-      </categories>
-      <tags>
-        <tag>git</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>hexo设置网站图标Favicon</title>
-    <url>/2018/11/22/hexo%E8%AE%BE%E7%BD%AE%E7%BD%91%E7%AB%99%E5%9B%BE%E6%A0%87Favicon/</url>
-    <content><![CDATA[<p>网站发布后总是报错favicon.ico 403 not found. 坑很多啊！</p>
-<h4 id="生成favicon"><a href="#生成favicon" class="headerlink" title="生成favicon"></a><a href="#生成favicon" title="生成favicon"></a>生成favicon</h4><p>自行ps一个正方形的图标，网页显示的尺寸是16×16，做的时候最好是用32×32，可以<a href="http://www.faviconico.org/" target="_blank" rel="noopener">在线生成ico图标</a>。  </p>
-<a id="more"></a>
-<h4 id="设置位置"><a href="#设置位置" class="headerlink" title="设置位置"></a><a href="#设置位置" title="设置位置"></a>设置位置</h4><p>找到目录<code>hexo\themes\modernist\layout_partial\head.ejs</code>里：  </p>
-<pre><code>&lt;link rel=&quot;icon&quot; type=&quot;image/x-icon&quot; href=&quot;&lt;%- config.root %&gt;favicon.ico&quot;&gt;  
-替换为：  
-&lt;link rel=&quot;icon&quot; type=&quot;image/x-icon&quot; href=&quot;&lt;%- theme.favicon %&gt;&quot;&gt;  
-如果主题文件里没有这句引用，就手动在里面加一下  </code></pre><p>然后把favicon.ico放到hexo\source目录下<br>清除缓存，疯狂刷新页面就出来了</p>
-<h4 id="坑"><a href="#坑" class="headerlink" title="坑"></a><a href="#坑" title="坑"></a>坑</h4><p>ps生成的也好，在线制作的图片也好，都是标量图，处理过实际效果会模糊，要多次调整文字位置的像素占用、字体、以及文字抗锯齿方式 才能让ico在网页上显示不模糊</p>
-<p>多次生成结果：</p>
-<ul>
-<li>图标的垂直位置得居中，也就是说：图标画布的顶边距 = 底边距</li>
-<li>图标自身高度所占用像素点，得是双数</li>
-<li>字体、图标少拐弯，抗锯齿方式最好用”锐利”这种比较清晰，没有模糊边</li>
-</ul>
-<p>我的图标：字体：Gadugi(Regular) + 锐利 + 19像素字(实际图片里高18px)，顶边距=底边距=7px</p>
-]]></content>
-      <categories>
-        <category>代码</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>hexo里的code代码高亮</title>
-    <url>/2018/11/22/hexo%E9%87%8C%E7%9A%84code%E4%BB%A3%E7%A0%81%E9%AB%98%E4%BA%AE/</url>
-    <content><![CDATA[<p>Hexo博客弄好之后，代码高亮显得太单调了，以前折腾wordpress的时候用param.js不太适合这个，多方查看找到个<a href="https://github.com/google/code-prettify" target="_blank" rel="noopener">prettify</a> 插件，尝试了一下之后效果还不错。</p>
-<p>先关闭Hexo的代码高亮功能，修改根目录下的配置文件<code>_config.yml</code>  </p>
-<pre><code>highlight:  
- enable: false  
- line_number: false   
- auto_detect: false  
- tab_replace:  </code></pre><a id="more"></a>
-<p>然后下载 <a href="https://github.com/google/code-prettify" target="_blank" rel="noopener">prettify</a>，把css和js文件丢到对应的<code>hexo\themes\themeName\source\css、js</code>文件夹里面，并引入</p>
-<p>js引入位置在<code>hexo\themes\themeName\layout\layout.ejs</code>内：  </p>
-<pre><code>&lt;%\- js(&#39;js/prettify.js&#39;) %&gt;  </code></pre><p>css引入位置在  </p>
-<pre><code>&lt;%\- css(&#39;css/tomorrow-night.min.css&#39;) %&gt;  </code></pre><p>并且在页面加载完毕后调用  </p>
-<pre><code>$(&#39;pre&#39;).addClass(&#39;prettyprint linenums&#39;).attr(&#39;style&#39;, &#39;overflow:auto;&#39;);  
- prettyPrint();  </code></pre><p>就这样，设置就完成了，刷新看效果<br>另外，可以在这个地方<a href="https://jmblog.github.io/color-themes-for-google-code-prettify/" target="_blank" rel="noopener">https://jmblog.github.io/color-themes-for-google-code-prettify/</a>选择一套自己喜欢的主题替换上面的prettify.css即可。</p>
-]]></content>
-      <categories>
-        <category>代码</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>javascript阻止浏览器后退backspace键</title>
-    <url>/2016/06/21/javascript%E9%98%BB%E6%AD%A2%E6%B5%8F%E8%A7%88%E5%99%A8%E5%90%8E%E9%80%80backspace%E9%94%AE/</url>
-    <content><![CDATA[<p>由于项目需求，写到某个插件的时候，需要阻止backspace等浏览器默认事件，但是用e.preventDefault()无论如何都搞不定，火狐和谷歌在input或textarea失焦之后，按backspace都执行了后退(上一页)，网上查了资料，也问了不少人，最终原生js解决，以此为记：  </p>
-<a id="more"></a>
-<h3 id="自己写的简单版"><a href="#自己写的简单版" class="headerlink" title="自己写的简单版"></a><a href="#自己写的简单版" title="自己写的简单版"></a>自己写的简单版</h3><pre><code>//禁止后退键（Backspace）  
-function banBackSpace(e){  
- var ev = e || window.event;//获取event对象  
- var focus=$(cid).is(&quot;:focus&quot;)?true:false;  
- var flag1=(ev.keyCode == 8 &amp;&amp; focus==false &amp;&amp; $(&quot;div.adr_base&quot;).length&gt;0)?true:false;  
- if(flag1){  
- $(&quot;div.check&quot;).siblings(cid).focus();  
- $(&quot;div.check&quot;).remove();  
- return false;  
- }  
-}  
-//禁止后退键 作用于Firefox、Opera  
-document.onkeypress=banBackSpace;  
-//禁止后退键 作用于IE、Chrome  
-document.onkeydown=banBackSpace;  
-//window.history.forward(1);//屏蔽浏览器自带的后退键  </code></pre><h3 id="网上的完整案例"><a href="#网上的完整案例" class="headerlink" title="网上的完整案例"></a><a href="#网上的完整案例" title="网上的完整案例"></a>网上的完整案例</h3><pre><code>//处理键盘事件 禁止后退键（Backspace）密码或单行、多行文本框除外  
-function banBackSpace(e){  
- var ev = e || window.event;//获取event对象  
- var obj = ev.target || ev.srcElement;//获取事件  
- var t = obj.type || obj.getAttribute(&#39;type&#39;);//获取事件源类型  
- //获取作为判断条件的事件类型  
- var vReadOnly = obj.getAttribute(&#39;readonly&#39;);  
- var vEnabled = obj.getAttribute(&#39;enabled&#39;);  
- //处理null值情况  
- vReadOnly = (vReadOnly == null) ? false : true;  
- vEnabled = (vEnabled == null) ? true : vEnabled;  
- //当敲Backspace键时，事件源类型为密码或单行、多行文本的，  
- //并且readonly属性为true或enabled属性为false的，则退格键失效  
- var flag1=(ev.keyCode == 8 &amp;&amp; (t==&quot;password&quot; || t==&quot;text&quot; || t==&quot;textarea&quot;)&amp;&amp; (vReadOnly || vEnabled!=true))?true:false;  
- //当敲Backspace键时，事件源类型非密码或单行、多行文本的，则退格键失效  
- var flag2=(ev.keyCode == 8 &amp;&amp; t != &quot;password&quot; &amp;&amp; t != &quot;text&quot; &amp;&amp; t != &quot;textarea&quot;)?true:false;  
- //判断  
- if(flag2){  
- return false;  
- }  
- if(flag1){  
- return false;  
- }  
-}  
-//禁止后退键 用于Firefox、Opera  
-document.onkeypress=banBackSpace;  
-//禁止后退键 用于IE、Chrome  
-document.onkeydown=banBackSpace;  
-window.history.forward(1);//屏蔽浏览器自带的后退键 </code></pre>]]></content>
-      <categories>
-        <category>代码</category>
-      </categories>
-  </entry>
-  <entry>
     <title>js/jquery选中部分文字功能</title>
     <url>/2016/10/18/js-jquery%E9%80%89%E4%B8%AD%E9%83%A8%E5%88%86%E6%96%87%E5%AD%97%E5%8A%9F%E8%83%BD/</url>
     <content><![CDATA[<p>项目上需要一个文件重命名功能，就像百度网盘的文件重命名一样，只选中文件名不选中后缀:<br>这样子：<br><img src="http://zzzeg.github.io/img/0001.jpg" alt=""><br>代码如下：<br>  <a id="more"></a><br>html部分  </p>
@@ -492,35 +492,6 @@ $(&quot;.a&quot;).click(function(){
  var allin=str.length-index; //总字符长度- 后缀长度=需要选中部分的长度  
  $(&quot;#t2&quot;).setSelection(0,allin);  
 })  </code></pre>]]></content>
-      <categories>
-        <category>代码</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>json数组的增删改操作</title>
-    <url>/2018/05/24/json%E6%95%B0%E7%BB%84%E7%9A%84%E5%A2%9E%E5%88%A0%E6%94%B9%E6%93%8D%E4%BD%9C/</url>
-    <content><![CDATA[<h4 id="1、数组的创建"><a href="#1、数组的创建" class="headerlink" title="1、数组的创建"></a><a href="#1、数组的创建" title="1、数组的创建"></a>1、数组的创建</h4><pre><code>var arrayObj = new Array();　//创建一个数组  
-var arrayObj = new Array(\[size\]);　//创建一个数组并指定长度，注意不是上限，是长度  
-var arrayObj = new Array(\[element0\[, element1\[, ...\[, elementN\]\]\]\]);　创建一个数组并赋值  </code></pre><a id="more"></a>
-<p>要说明的是，虽然第二种方法创建数组指定了长度，但实际上所有情况下数组都是变长的，也就是说即使指定了长度为5，仍然可以将元素存储在规定长度以外的，注意：这时长度会随之改变。</p>
-<h4 id="2、数组的元素的访问"><a href="#2、数组的元素的访问" class="headerlink" title="2、数组的元素的访问"></a><a href="#2、数组的元素的访问" title="2、数组的元素的访问"></a>2、数组的元素的访问</h4><pre><code>var testGetArrValue=arrayObj\[1\]; //获取数组的元素值  
-arrayObj\[1\]= &quot;这是新值&quot;; //给数组元素赋予新的值  </code></pre><h4 id="3、数组元素的添加"><a href="#3、数组元素的添加" class="headerlink" title="3、数组元素的添加"></a><a href="#3、数组元素的添加" title="3、数组元素的添加"></a>3、数组元素的添加</h4><pre><code>// 将一个或多个新元素添加到数组结尾，并返回数组新长度  
-arrayObj. push(\[item1 \[item2 \[. . . \[itemN \]\]\]\]);  
-// 将一个或多个新元素添加到数组开始，数组中的元素自动后移，返回数组新长度  
-arrayObj.unshift(\[item1 \[item2 \[. . . \[itemN \]\]\]\]);  
-//将一个或多个新元素插入到数组的指定位置，插入位置的元素自动后移，返回&quot;&quot;。  
-arrayObj.splice(insertPos,0,\[item1\[, item2\[, . . . \[,itemN\]\]\]\]);  </code></pre><h4 id="4、数组元素的删除"><a href="#4、数组元素的删除" class="headerlink" title="4、数组元素的删除"></a><a href="#4、数组元素的删除" title="4、数组元素的删除"></a>4、数组元素的删除</h4><pre><code>//移除最后一个元素并返回该元素值  
-arrayObj.pop();   
-//移除最前一个元素并返回该元素值，数组中元素自动前移  
-arrayObj.shift();   
-//删除从指定位置deletePos开始的指定数量deleteCount的元素，数组形式返回所移除的元素  
-arrayObj.splice(deletePos,deleteCount);  </code></pre><h4 id="5、数组的截取和合并"><a href="#5、数组的截取和合并" class="headerlink" title="5、数组的截取和合并"></a><a href="#5、数组的截取和合并" title="5、数组的截取和合并"></a>5、数组的截取和合并</h4><pre><code>//以数组的形式返回数组的一部分，注意不包括 end 对应的元素，如果省略 end 将复制 start 之后的所有元素  
-arrayObj.slice(start, \[end\]);   
-//将多个数组（也可以是字符串，或者是数组和字符串的混合）连接为一个数组，返回连接好的新的数组  
-arrayObj.concat(\[item1\[, item2\[, . . . \[,itemN\]\]\]\]);  </code></pre><h4 id="6、数组的拷贝"><a href="#6、数组的拷贝" class="headerlink" title="6、数组的拷贝"></a><a href="#6、数组的拷贝" title="6、数组的拷贝"></a>6、数组的拷贝</h4><pre><code>arrayObj.slice(0); //返回数组的拷贝数组，注意是一个新的数组，不是指向  
-arrayObj.concat(); //返回数组的拷贝数组，注意是一个新的数组，不是指向  </code></pre><h4 id="7、数组元素的排序"><a href="#7、数组元素的排序" class="headerlink" title="7、数组元素的排序"></a><a href="#7、数组元素的排序" title="7、数组元素的排序"></a>7、数组元素的排序</h4><pre><code>arrayObj.reverse(); //反转元素（最前的排到最后、最后的排到最前），返回数组地址  
-arrayObj.sort(); //对数组元素排序，返回数组地址  </code></pre><h4 id="8、数组元素的字符串化"><a href="#8、数组元素的字符串化" class="headerlink" title="8、数组元素的字符串化"></a><a href="#8、数组元素的字符串化" title="8、数组元素的字符串化"></a>8、数组元素的字符串化</h4><pre><code>arrayObj.join(separator); //返回字符串，这个字符串将数组的每一个元素值连接在一起，中间用 separator 隔开。  
-toLocaleString 、toString 、valueOf：可以看作是join的特殊用法，不常用 </code></pre>]]></content>
       <categories>
         <category>代码</category>
       </categories>
@@ -557,6 +528,35 @@ alert(array.indexOf(5)); // -1  </code></pre><p>indexOf的代码：  </p>
  return isOK  
  }  
 }  </code></pre>]]></content>
+      <categories>
+        <category>代码</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>json数组的增删改操作</title>
+    <url>/2018/05/24/json%E6%95%B0%E7%BB%84%E7%9A%84%E5%A2%9E%E5%88%A0%E6%94%B9%E6%93%8D%E4%BD%9C/</url>
+    <content><![CDATA[<h4 id="1、数组的创建"><a href="#1、数组的创建" class="headerlink" title="1、数组的创建"></a><a href="#1、数组的创建" title="1、数组的创建"></a>1、数组的创建</h4><pre><code>var arrayObj = new Array();　//创建一个数组  
+var arrayObj = new Array(\[size\]);　//创建一个数组并指定长度，注意不是上限，是长度  
+var arrayObj = new Array(\[element0\[, element1\[, ...\[, elementN\]\]\]\]);　创建一个数组并赋值  </code></pre><a id="more"></a>
+<p>要说明的是，虽然第二种方法创建数组指定了长度，但实际上所有情况下数组都是变长的，也就是说即使指定了长度为5，仍然可以将元素存储在规定长度以外的，注意：这时长度会随之改变。</p>
+<h4 id="2、数组的元素的访问"><a href="#2、数组的元素的访问" class="headerlink" title="2、数组的元素的访问"></a><a href="#2、数组的元素的访问" title="2、数组的元素的访问"></a>2、数组的元素的访问</h4><pre><code>var testGetArrValue=arrayObj\[1\]; //获取数组的元素值  
+arrayObj\[1\]= &quot;这是新值&quot;; //给数组元素赋予新的值  </code></pre><h4 id="3、数组元素的添加"><a href="#3、数组元素的添加" class="headerlink" title="3、数组元素的添加"></a><a href="#3、数组元素的添加" title="3、数组元素的添加"></a>3、数组元素的添加</h4><pre><code>// 将一个或多个新元素添加到数组结尾，并返回数组新长度  
+arrayObj. push(\[item1 \[item2 \[. . . \[itemN \]\]\]\]);  
+// 将一个或多个新元素添加到数组开始，数组中的元素自动后移，返回数组新长度  
+arrayObj.unshift(\[item1 \[item2 \[. . . \[itemN \]\]\]\]);  
+//将一个或多个新元素插入到数组的指定位置，插入位置的元素自动后移，返回&quot;&quot;。  
+arrayObj.splice(insertPos,0,\[item1\[, item2\[, . . . \[,itemN\]\]\]\]);  </code></pre><h4 id="4、数组元素的删除"><a href="#4、数组元素的删除" class="headerlink" title="4、数组元素的删除"></a><a href="#4、数组元素的删除" title="4、数组元素的删除"></a>4、数组元素的删除</h4><pre><code>//移除最后一个元素并返回该元素值  
+arrayObj.pop();   
+//移除最前一个元素并返回该元素值，数组中元素自动前移  
+arrayObj.shift();   
+//删除从指定位置deletePos开始的指定数量deleteCount的元素，数组形式返回所移除的元素  
+arrayObj.splice(deletePos,deleteCount);  </code></pre><h4 id="5、数组的截取和合并"><a href="#5、数组的截取和合并" class="headerlink" title="5、数组的截取和合并"></a><a href="#5、数组的截取和合并" title="5、数组的截取和合并"></a>5、数组的截取和合并</h4><pre><code>//以数组的形式返回数组的一部分，注意不包括 end 对应的元素，如果省略 end 将复制 start 之后的所有元素  
+arrayObj.slice(start, \[end\]);   
+//将多个数组（也可以是字符串，或者是数组和字符串的混合）连接为一个数组，返回连接好的新的数组  
+arrayObj.concat(\[item1\[, item2\[, . . . \[,itemN\]\]\]\]);  </code></pre><h4 id="6、数组的拷贝"><a href="#6、数组的拷贝" class="headerlink" title="6、数组的拷贝"></a><a href="#6、数组的拷贝" title="6、数组的拷贝"></a>6、数组的拷贝</h4><pre><code>arrayObj.slice(0); //返回数组的拷贝数组，注意是一个新的数组，不是指向  
+arrayObj.concat(); //返回数组的拷贝数组，注意是一个新的数组，不是指向  </code></pre><h4 id="7、数组元素的排序"><a href="#7、数组元素的排序" class="headerlink" title="7、数组元素的排序"></a><a href="#7、数组元素的排序" title="7、数组元素的排序"></a>7、数组元素的排序</h4><pre><code>arrayObj.reverse(); //反转元素（最前的排到最后、最后的排到最前），返回数组地址  
+arrayObj.sort(); //对数组元素排序，返回数组地址  </code></pre><h4 id="8、数组元素的字符串化"><a href="#8、数组元素的字符串化" class="headerlink" title="8、数组元素的字符串化"></a><a href="#8、数组元素的字符串化" title="8、数组元素的字符串化"></a>8、数组元素的字符串化</h4><pre><code>arrayObj.join(separator); //返回字符串，这个字符串将数组的每一个元素值连接在一起，中间用 separator 隔开。  
+toLocaleString 、toString 、valueOf：可以看作是join的特殊用法，不常用 </code></pre>]]></content>
       <categories>
         <category>代码</category>
       </categories>
@@ -776,6 +776,23 @@ oninput=&quot;this.style.height=&#39;auto&#39;;this.style.height = this.scrollHe
       </categories>
   </entry>
   <entry>
+    <title>心情随笔</title>
+    <url>/2014/12/24/%E5%BF%83%E6%83%85%E9%9A%8F%E7%AC%94/</url>
+    <content><![CDATA[<p>　　生活越来越平淡慵懒和无力，内心疲倦到再难泛起丝毫涟漪。知觉和情感都下落到一个低潮的极点，与人交际不再单纯的交流，不愿过多谈及自身，疑似社会的黑暗面就在身边般小心翼翼地藏匿.</p>
+<p>　　不再相信美好的未来却又幻想未来的样子，像看恐怖片一样，明知害怕内心却期待着会出现什么样的场面让自己惊恐。这是瘾，是对作死的孤独有种习惯上的瘾…</p>
+<p>　　曾笃信，陪伴是最长情的告白，也一直默默身体力行。然，事实是时时事事为他人做嫁衣…一次又一次的双手空空。残酷的结局一次次碰击信念，如同克雷泽清肃屏障一般，屏障终将破碎。思维也在经历的催化下逐渐自我变异，无私的奉献心被短期的收益心取而代之，不再做看不到回报的事，长期式的坚持也被认为是多个短期的结合体，持之以恒变得艰难而又廉价。与朋友闲聊时不知不觉无言以对，从自闭到开怀再到慵懒过后，心很累，很累很累…满腔踌躇无人倾诉，把心情寄托于文字宣泄…  </p>
+<p><img src="http://ww4.sinaimg.cn/large/005K8Fb9gw1enkw25vjg6j30jg06474y.jpg" alt="">  </p>
+<p>　　读李煜词集、眠空、朝花夕拾…或许是受这类成名作影响变得沉毅寡言。但也无可置否，拥类似心境的人，论事朱红，偶尔愤世妒俗，时常为了活在当下而得过且过，站在社会的角读来看，着实是失败、偏执、也不合群…</p>
+<p>　　如此认清自己，也深知阳光下绿叶旁活的健康向上，却不愿主动去变更生活的习惯。有时曾想，自己怎么变得这么懒，基本的积极向上的心态都失去了。后来在某些方面的表现否定了自己的猜想。是麻木，是情感和生活的麻木，带走了信念里难得的动力，却不知如何找回，不知它在哪里…不知，它是否在偷笑着看我这副样子…</p>
+]]></content>
+      <categories>
+        <category>日常心情</category>
+      </categories>
+      <tags>
+        <tag>心情</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>数组的和并和对象的和并</title>
     <url>/2016/12/05/%E6%95%B0%E7%BB%84%E7%9A%84%E5%92%8C%E5%B9%B6%E5%92%8C%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%92%8C%E5%B9%B6/</url>
     <content><![CDATA[<h4 id="1-数组合并"><a href="#1-数组合并" class="headerlink" title="1 数组合并"></a><a href="#1-数组合并" title="1 数组合并"></a>1 数组合并</h4><h5 id="1-1-concat-方法"><a href="#1-1-concat-方法" class="headerlink" title="1.1 concat 方法"></a><a href="#1-1-concat-方法" title="1.1 concat 方法"></a>1.1 concat 方法</h5><pre><code>var a=\[1,2,3\],b=\[4,5,6\];  
@@ -855,23 +872,6 @@ console.log(obj1.b.b1)  // 22 obj1拷贝了obj2的所有属性以及值，并不
       </tags>
   </entry>
   <entry>
-    <title>心情随笔</title>
-    <url>/2014/12/24/%E5%BF%83%E6%83%85%E9%9A%8F%E7%AC%94/</url>
-    <content><![CDATA[<p>　　生活越来越平淡慵懒和无力，内心疲倦到再难泛起丝毫涟漪。知觉和情感都下落到一个低潮的极点，与人交际不再单纯的交流，不愿过多谈及自身，疑似社会的黑暗面就在身边般小心翼翼地藏匿.</p>
-<p>　　不再相信美好的未来却又幻想未来的样子，像看恐怖片一样，明知害怕内心却期待着会出现什么样的场面让自己惊恐。这是瘾，是对作死的孤独有种习惯上的瘾…</p>
-<p>　　曾笃信，陪伴是最长情的告白，也一直默默身体力行。然，事实是时时事事为他人做嫁衣…一次又一次的双手空空。残酷的结局一次次碰击信念，如同克雷泽清肃屏障一般，屏障终将破碎。思维也在经历的催化下逐渐自我变异，无私的奉献心被短期的收益心取而代之，不再做看不到回报的事，长期式的坚持也被认为是多个短期的结合体，持之以恒变得艰难而又廉价。与朋友闲聊时不知不觉无言以对，从自闭到开怀再到慵懒过后，心很累，很累很累…满腔踌躇无人倾诉，把心情寄托于文字宣泄…  </p>
-<p><img src="http://ww4.sinaimg.cn/large/005K8Fb9gw1enkw25vjg6j30jg06474y.jpg" alt="">  </p>
-<p>　　读李煜词集、眠空、朝花夕拾…或许是受这类成名作影响变得沉毅寡言。但也无可置否，拥类似心境的人，论事朱红，偶尔愤世妒俗，时常为了活在当下而得过且过，站在社会的角读来看，着实是失败、偏执、也不合群…</p>
-<p>　　如此认清自己，也深知阳光下绿叶旁活的健康向上，却不愿主动去变更生活的习惯。有时曾想，自己怎么变得这么懒，基本的积极向上的心态都失去了。后来在某些方面的表现否定了自己的猜想。是麻木，是情感和生活的麻木，带走了信念里难得的动力，却不知如何找回，不知它在哪里…不知，它是否在偷笑着看我这副样子…</p>
-]]></content>
-      <categories>
-        <category>日常心情</category>
-      </categories>
-      <tags>
-        <tag>心情</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>旅途随感</title>
     <url>/2014/05/14/%E6%97%85%E9%80%94%E9%9A%8F%E6%84%9F/</url>
     <content><![CDATA[<p>五月，下了一场很长很长的暴雨…<br>　　不知道期待了多久的雨过天晴，却迟迟未至，屋里充斥着气息君的低吟。雨天，是个调皮的坏姑娘，总是拦着我的脚步，陪她在家里玩耍…</p>
@@ -895,7 +895,7 @@ console.log(obj1.b.b1)  // 22 obj1拷贝了obj2的所有属性以及值，并不
 <p>去年前年真是太累了，19年7月份忙碌到2021年</p>
 <p>人都是不知足的，想要听话的，想要懂事的，又想要知心的来分担生活的琐碎。世上没有十全大补汤，也没有十全十美的人，以前以为十全十美是没有缺点没有恶习，长大后结合生活发现，十全十美是御、萝、少、骚、纯、忠、孝、勇、智、信的各个角度各个角色各个方面都具备的人，可是世上哪有这样的人</p>
 <h5 id="2月5日"><a href="#2月5日" class="headerlink" title="2月5日"></a>2月5日</h5><p>假如疼痛会觉得快乐，疼痛会让人发笑，那该是怎样的，以前认为，怎么会有人觉得疼痛是快乐的呢。可随着逐步深入的了解这个社会，就是有那么些人，疼的时候说快乐，思想被扭曲，培养成这样的心理，该怎么去拯救ta们呢，心理学上至今没有一个解释，铁条弯了，反向扭一下就能变直，那些心理弯的人，如何反向扭才能让ta们直起来，还是像那破裂的腰间盘一样，永远也直不起来了…<br>如果有地狱，希望每个人都能知道，但即使有地狱，也得等老去死去才知道，它太遥远了，有些人，需要在去的过程中就感受到它的可怕，某些“传教士”更应受到如此的惩罚</p>
-<h5 id="2月6日"><a href="#2月6日" class="headerlink" title="2月6日"></a>2月6日</h5><p>把博客完善了一下，亲手搭建出来的东西，满满的成就感，或许以后会升级，但目前已经够用了</p>
+<h5 id="2月6日"><a href="#2月6日" class="headerlink" title="2月6日"></a>2月6日</h5><p>把博客完善了一下，亲手搭建出来的东西，满满的成就感，或许以后会升级，但目前已经够用了,上班的最后一天，把博客的分类整理清楚了，快乐～<br>更新了分类模块显示<br>还差个全站搜索</p>
 <h5 id="2月9日"><a href="#2月9日" class="headerlink" title="2月9日"></a>2月9日</h5><p>windows电脑卡的原因终于找到了，本打算重装系统，备份资料，一顿大操作。突然灵光一闪，检查软件的安装位置，全部重装到固态硬盘，完美解决所有问题！快乐</p>
 <h5 id="2月14日"><a href="#2月14日" class="headerlink" title="2月14日"></a>2月14日</h5><p>虽是情人节，见闻却跟情人节没丝毫关系。同龄人都有了各自成熟的想法，而我相比之下，就是个井底之蛙。小地方物质生活虽然没大城市现代化，但思想修行是真的快。<br>认识了几个新朋友，第一个暂称其为二哥，第一印象“眯眯眼，猥琐，好色，甚至有点娘”，一起喝茶聊天吃饭喝酒后，发现是个很细心专注有想法的人，只是殷实的家底，让他没产生求进求知的欲望；第二个老大哥，四十来岁，交了个与我同龄的女朋友，看起来随和、憨厚、实诚、大方，会面结束后，才知道是个政客，手段丰富，也算位高权重，富的流油；还有叔叔阿姨，饭店老板，甚至十来岁的小朋友都敢主动问我是哪里人，个个能抗能打。二线城市厉害如厮</p>
 <h5 id="2月24日"><a href="#2月24日" class="headerlink" title="2月24日"></a>2月24日</h5><p>昨天搞定了分类排序错乱的功能，搜索一直没完善，下午定位问题在search.js上，经过两天的折腾，看了几个地方的源码+官网API，总算把搜索功能做出来了，别人的东西全是坑，完善改良了一下，尚且可用，以后有优化的空间的话再改。</p>
