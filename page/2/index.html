@@ -15,9 +15,6 @@
 <body>
 <header class="header">
     <div class="header-inner">
-        <div class="header-title">
-
-        </div>
         <nav class="header-nav">
 			
             
@@ -59,7 +56,42 @@
                 关于
             </a>
             
+			
         </nav>
+		<div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocorrect="off" autocapitalize="none"
+           placeholder="search..." spellcheck="false"
+           type="text" id="search-input">
+	<a class="clearinput">x</a>
+  </div>
+  <span class="popup-btn-close">
+	<a role="button" class="popup-trigger">
+		<i class="fa fa-times-circle"></i>
+	</a>
+  </span>
+</div>
+<div id="search-result">
+	<div id="no-result">
+	    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+	  </div>
+</div>
+<script>
+var CONFIG = {
+ path: 'search.xml',
+ root: '/',
+ localsearch:{
+   	top_n_per_article: 1,
+   	trigger: 'auto',
+	enable: false,
+	unescape: false,
+	preload: true
+ }
+}
+</script>
     </div>
 </header>
 <header class="mobile-header">
@@ -104,6 +136,35 @@
 <div class="main">
     <div class="content-inner">
         <div class="posts">
+	<!--首页文章列表-->
+    
+        <article class="post-abstract">
+            <div class="post-title">
+                <h2><a class="post-title-link" href="/2018/11/22/hexo%E8%AE%BE%E7%BD%AE%E7%BD%91%E7%AB%99%E5%9B%BE%E6%A0%87Favicon/">hexo设置网站图标Favicon</a></h2>
+            </div>
+            <div class="post-meta">
+                <span class="post-time">2018-11-22</span>
+                
+                <span class="post-category">
+                    
+                    <a class="category" href="/categories/%E4%BB%A3%E7%A0%81/">代码</a>
+                    
+                </span>
+                
+            </div>
+            <div class="post-content">
+                
+                    <p>网站发布后总是报错favicon.ico 403 not found. 坑很多啊！</p>
+<h4 id="生成favicon"><a href="#生成favicon" class="headerlink" title="生成favicon"></a><a href="#生成favicon" title="生成favicon"></a>生成favicon</h4><p>自行ps一个正方形的图标，网页显示的尺寸是16×16，做的时候最好是用32×32，可以<a href="http://www.faviconico.org/" target="_blank" rel="noopener">在线生成ico图标</a>。  </p>
+                    <div class="read-more">
+                        <a href="/2018/11/22/hexo%E8%AE%BE%E7%BD%AE%E7%BD%91%E7%AB%99%E5%9B%BE%E6%A0%87Favicon/" class="read-more-link">
+                            阅读全文
+                            <i class="iconfont icon-readmore"></i>
+                        </a>
+                    </div>
+                
+            </div>
+        </article>
     
         <article class="post-abstract">
             <div class="post-title">
@@ -130,34 +191,6 @@
  tab_replace:  </code></pre>
                     <div class="read-more">
                         <a href="/2018/11/22/hexo%E9%87%8C%E7%9A%84code%E4%BB%A3%E7%A0%81%E9%AB%98%E4%BA%AE/" class="read-more-link">
-                            阅读全文
-                            <i class="iconfont icon-readmore"></i>
-                        </a>
-                    </div>
-                
-            </div>
-        </article>
-    
-        <article class="post-abstract">
-            <div class="post-title">
-                <h2><a class="post-title-link" href="/2018/11/22/hexo%E8%AE%BE%E7%BD%AE%E7%BD%91%E7%AB%99%E5%9B%BE%E6%A0%87Favicon/">hexo设置网站图标Favicon</a></h2>
-            </div>
-            <div class="post-meta">
-                <span class="post-time">2018-11-22</span>
-                
-                <span class="post-category">
-                    
-                    <a class="category" href="/categories/%E4%BB%A3%E7%A0%81/">代码</a>
-                    
-                </span>
-                
-            </div>
-            <div class="post-content">
-                
-                    <p>网站发布后总是报错favicon.ico 403 not found. 坑很多啊！</p>
-<h4 id="生成favicon"><a href="#生成favicon" class="headerlink" title="生成favicon"></a><a href="#生成favicon" title="生成favicon"></a>生成favicon</h4><p>自行ps一个正方形的图标，网页显示的尺寸是16×16，做的时候最好是用32×32，可以<a href="http://www.faviconico.org/" target="_blank" rel="noopener">在线生成ico图标</a>。  </p>
-                    <div class="read-more">
-                        <a href="/2018/11/22/hexo%E8%AE%BE%E7%BD%AE%E7%BD%91%E7%AB%99%E5%9B%BE%E6%A0%87Favicon/" class="read-more-link">
                             阅读全文
                             <i class="iconfont icon-readmore"></i>
                         </a>
@@ -385,6 +418,9 @@ var arrayObj = new Array(\[element0\[, element1\[, ...\[, elementN\]\]\]\]);　�
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 <script src="/js/index.js"></script>
+
+	
+<script src="/js/search.js"></script>
 
 <!-- <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script> -->
 <script src='//unpkg.com/valine/dist/Valine.min.js'></script>

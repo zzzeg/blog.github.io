@@ -15,9 +15,6 @@
 <body>
 <header class="header">
     <div class="header-inner">
-        <div class="header-title">
-
-        </div>
         <nav class="header-nav">
 			
             
@@ -59,7 +56,42 @@
                 关于
             </a>
             
+			
         </nav>
+		<div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocorrect="off" autocapitalize="none"
+           placeholder="search..." spellcheck="false"
+           type="text" id="search-input">
+	<a class="clearinput">x</a>
+  </div>
+  <span class="popup-btn-close">
+	<a role="button" class="popup-trigger">
+		<i class="fa fa-times-circle"></i>
+	</a>
+  </span>
+</div>
+<div id="search-result">
+	<div id="no-result">
+	    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+	  </div>
+</div>
+<script>
+var CONFIG = {
+ path: 'search.xml',
+ root: '/',
+ localsearch:{
+   	top_n_per_article: 1,
+   	trigger: 'auto',
+	enable: false,
+	unescape: false,
+	preload: true
+ }
+}
+</script>
     </div>
 </header>
 <header class="mobile-header">
@@ -106,6 +138,7 @@
         <div class="posts">
     <article class="post-whole">
         <div class="post-title">
+			<!--文章详情页-->
             <h2 class="title">js判断数组中是否有某个值存在</h2>
             <div class="post-meta">
                 <span class="post-time">2018-11-23</span>
@@ -170,8 +203,8 @@ alert(array.indexOf(5)); // -1  </code></pre><p>indexOf的代码：  </p>
             </a>
         
         
-            <a class="next" href="/2018/11/22/hexo%E9%87%8C%E7%9A%84code%E4%BB%A3%E7%A0%81%E9%AB%98%E4%BA%AE/">
-                <span class="nav-default">hexo里的code代码高亮</span>
+            <a class="next" href="/2018/11/22/hexo%E8%AE%BE%E7%BD%AE%E7%BD%91%E7%AB%99%E5%9B%BE%E6%A0%87Favicon/">
+                <span class="nav-default">hexo设置网站图标Favicon</span>
                 <span class="nav-mobile">下一篇</span>
                 <i class="iconfont icon-next"></i>
             </a>
@@ -209,6 +242,9 @@ alert(array.indexOf(5)); // -1  </code></pre><p>indexOf的代码：  </p>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 <script src="/js/index.js"></script>
+
+	
+<script src="/js/search.js"></script>
 
 <!-- <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script> -->
 <script src='//unpkg.com/valine/dist/Valine.min.js'></script>

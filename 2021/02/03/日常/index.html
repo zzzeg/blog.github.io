@@ -15,9 +15,6 @@
 <body>
 <header class="header">
     <div class="header-inner">
-        <div class="header-title">
-
-        </div>
         <nav class="header-nav">
 			
             
@@ -59,7 +56,42 @@
                 关于
             </a>
             
+			
         </nav>
+		<div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocorrect="off" autocapitalize="none"
+           placeholder="search..." spellcheck="false"
+           type="text" id="search-input">
+	<a class="clearinput">x</a>
+  </div>
+  <span class="popup-btn-close">
+	<a role="button" class="popup-trigger">
+		<i class="fa fa-times-circle"></i>
+	</a>
+  </span>
+</div>
+<div id="search-result">
+	<div id="no-result">
+	    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+	  </div>
+</div>
+<script>
+var CONFIG = {
+ path: 'search.xml',
+ root: '/',
+ localsearch:{
+   	top_n_per_article: 1,
+   	trigger: 'auto',
+	enable: false,
+	unescape: false,
+	preload: true
+ }
+}
+</script>
     </div>
 </header>
 <header class="mobile-header">
@@ -106,6 +138,7 @@
         <div class="posts">
     <article class="post-whole">
         <div class="post-title">
+			<!--文章详情页-->
             <h2 class="title">日常</h2>
             <div class="post-meta">
                 <span class="post-time">2021-02-03</span>
@@ -121,7 +154,7 @@
         </div>
         <div class="post-toc" id="post-toc">
     <strong class="post-toc-title">目录</strong>
-    <ol class="toc"><li class="toc-item toc-level-5"><a class="toc-link" href="#日常"><span class="toc-text">日常</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2月5日"><span class="toc-text">2月5日</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2月6日"><span class="toc-text">2月6日</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#something-to-ll"><span class="toc-text">something to ll</span></a></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-5"><a class="toc-link" href="#日常"><span class="toc-text">日常</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2月5日"><span class="toc-text">2月5日</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2月6日"><span class="toc-text">2月6日</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2月9日"><span class="toc-text">2月9日</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2月14日"><span class="toc-text">2月14日</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2月24日"><span class="toc-text">2月24日</span></a></li></ol>
     <div class="back-to-top" id="back-to-top">
         <a href="javascript:void(0);">回到顶部</a>
     </div>
@@ -130,11 +163,19 @@
             <h5 id="日常"><a href="#日常" class="headerlink" title="日常"></a>日常</h5><a id="more"></a>
 <p>躺下的时候灵感如泉涌，起来的时候，一篓子的感慨又不知跑到哪里去了，城市的喧嚣，让我安静不下来，亦消停不下来</p>
 <p>去年前年真是太累了，19年7月份忙碌到2021年</p>
-<p>人都是不知足的，想要听话，想要懂事，又想要知心，分担生活的琐碎，世上没有十全大补汤，也没有十全十美的人，以前以为十全十美是没有缺点没有恶习，长大后结合生活发现，十全十美是御、萝、少、骚、纯、忠、孝、勇、智、信的各个角度各个角色各个方面都可的人，可是世上哪有这样的人啊</p>
+<p>人都是不知足的，想要听话的，想要懂事的，又想要知心的来分担生活的琐碎。世上没有十全大补汤，也没有十全十美的人，以前以为十全十美是没有缺点没有恶习，长大后结合生活发现，十全十美是御、萝、少、骚、纯、忠、孝、勇、智、信的各个角度各个角色各个方面都具备的人，可是世上哪有这样的人</p>
 <h5 id="2月5日"><a href="#2月5日" class="headerlink" title="2月5日"></a>2月5日</h5><p>假如疼痛会觉得快乐，疼痛会让人发笑，那该是怎样的，以前认为，怎么会有人觉得疼痛是快乐的呢。可随着逐步深入的了解这个社会，就是有那么些人，疼的时候说快乐，思想被扭曲，培养成这样的心理，该怎么去拯救ta们呢，心理学上至今没有一个解释，铁条弯了，反向扭一下就能变直，那些心理弯的人，如何反向扭才能让ta们直起来，还是像那破裂的腰间盘一样，永远也直不起来了…<br>如果有地狱，希望每个人都能知道，但即使有地狱，也得等老去死去才知道，它太遥远了，有些人，需要在去的过程中就感受到它的可怕，某些“传教士”更应受到如此的惩罚</p>
 <h5 id="2月6日"><a href="#2月6日" class="headerlink" title="2月6日"></a>2月6日</h5><p>把博客完善了一下，亲手搭建出来的东西，满满的成就感，或许以后会升级，但目前已经够用了</p>
-<h5 id="something-to-ll"><a href="#something-to-ll" class="headerlink" title="something to ll"></a>something to ll</h5><p>时间过去了很久很久，以往的事回忆起来，还历历在目，想起那些并没有多少悔恨和负面情绪，留下的都是美好和感谢，<br>我还在这个地方，世界依然在转动，希望大家都能好好的<br>分开时，我不知道怎么才能摆脱那种失去世界的难过，<br>虽然打消了极端消极的年头，还是下了更黑暗的地方，做错事的人，不配再得到美好</p>
-
+<h5 id="2月9日"><a href="#2月9日" class="headerlink" title="2月9日"></a>2月9日</h5><p>windows电脑卡的原因终于找到了，本打算重装系统，备份资料，一顿大操作。突然灵光一闪，检查软件的安装位置，全部重装到固态硬盘，完美解决所有问题！快乐</p>
+<h5 id="2月14日"><a href="#2月14日" class="headerlink" title="2月14日"></a>2月14日</h5><p>虽是情人节，见闻却跟情人节没丝毫关系。同龄人都有了各自成熟的想法，而我相比之下，就是个井底之蛙。小地方物质生活虽然没大城市现代化，但思想修行是真的快。<br>认识了几个新朋友，第一个暂称其为二哥，第一印象“眯眯眼，猥琐，好色，甚至有点娘”，一起喝茶聊天吃饭喝酒后，发现是个很细心专注有想法的人，只是殷实的家底，让他没产生求进求知的欲望；第二个老大哥，四十来岁，交了个与我同龄的女朋友，看起来随和、憨厚、实诚、大方，会面结束后，才知道是个政客，手段丰富，也算位高权重，富的流油；还有叔叔阿姨，饭店老板，甚至十来岁的小朋友都敢主动问我是哪里人，个个能抗能打。二线城市厉害如厮</p>
+<h5 id="2月24日"><a href="#2月24日" class="headerlink" title="2月24日"></a>2月24日</h5><p>昨天搞定了分类排序错乱的功能，搜索一直没完善，下午定位问题在search.js上，经过两天的折腾，看了几个地方的源码+官网API，总算把搜索功能做出来了，别人的东西全是坑，完善改良了一下，尚且可用，以后有优化的空间的话再改。</p>
+<!-- 
+##### something to ll
+时间过去了很久很久，以往的事回忆起来，还历历在目，想起那些并没有多少悔恨和负面情绪，留下的都是美好和感谢，
+我还在这个地方，世界依然在转动，希望大家都能好好的
+分开时，我不知道怎么才能摆脱那种失去世界的难过，想起了电视里的情景，有个声音说:"如果你想摆脱痛苦，就去经历比现在更痛苦的事"
+虽然打消了极端消极的年头，还是下了更黑暗的地方，做错事的人，不配再得到美好 
+-->
         </div>
         
         <div class="post-tag">
@@ -188,6 +229,9 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 <script src="/js/index.js"></script>
+
+	
+<script src="/js/search.js"></script>
 
 <!-- <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script> -->
 <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
